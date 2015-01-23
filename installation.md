@@ -1,4 +1,6 @@
-gility`最容易的方法是从你的终端，执行以下命令：
+# 安装 #
+## 从终端安装： ##
+安装`Apigility`最容易的方法是从你的终端，执行以下命令：
 
 > curl -sS https://apigility.org/install | php
 如果你没有安装cURL，你可以使用php本身：
