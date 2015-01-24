@@ -83,62 +83,55 @@
 我们执行一个`GET`请求服务，并指定我们想要的HTML：
 
     GET /ping HTTP/1.1
-	    Accept: text/html
-		这将返回一个错误：
+	Accept: text/html
+    
+这将返回一个错误：
 
-			HTTP/1.1 406 Not Acceptable
-				Content-Type: application/problem+json
-					{
-								"detail": "Cannot honor Accept type specified",
-											"status": 406,
-													"title": "Not Acceptable",
-															"type": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"
-																	}
+	HTTP/1.1 406 Not Acceptable
+	Content-Type: application/problem+json
+	{
+		"detail": "Cannot honor Accept type specified",
+		"status": 406,
+		"title": "Not Acceptable",
+		"type": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"
+	}
 
 Apigility默认为[JSON](http://www.json.org/)。如果指定了`Accept`头不同的媒体类型，它会报告说，它不能处理它。 （不过，你可以稍后配置服务，以处理其他媒体类型。）
 
 现在，让我们试着请求JSON：
 
 	GET /ping HTTP/1.1
-		Accept: application/json
+	Accept: application/json
 
-		这将会正常工作！
+这将会正常工作！
 
-			HTTP/1.1 200 OK
-				Content-Type: application/json
-					{
-								"ack": 1396560875
-										}
+	HTTP/1.1 200 OK
+	Content-Type: application/json
+	{
+		"ack": 1396560875
+	}
 
 现在让我们做一个`POST`请求：
 
 	POST /ping HTTP/1.1
-		Accept: application/json
-			Content-Type: application/json
-				{ "timestamp": 1396560875 }
+	Accept: application/json
+	Content-Type: application/json
+	{ "timestamp": 1396560875 }
 
-				Apigility报错：
+Apigility报错：
 
-					HTTP/1.1 405 Method Not Allowed
-						Allow: GET
+	HTTP/1.1 405 Method Not Allowed
+	Allow: GET
 
-						Apigility负责HTTP方法协商的为你服务。这意味着如果一个请求是通过一个你不允许的方法，它会报告给用户一个`405`状态码，同时报告允许通过`Allow`的方法的响应头。
+Apigility负责HTTP方法协商的为你服务。这意味着如果一个请求是通过一个你不允许的方法，它会报告给用户一个`405`状态码，同时报告允许通过`Allow`的方法的响应头。
 
-						你也可以问apigility方法允许通过`OPTIONS`要求：
+你也可以问apigility方法允许通过`OPTIONS`要求：
 
-							OPTIONS /ping HTTP/1.1
-							将响应：
+	OPTIONS /ping HTTP/1.1
+    
+将响应：
 
-								HTTP/1.1 200 OK
-									Allow: GET
+	HTTP/1.1 200 OK
+	Allow: GET
 
-									恭喜！你已经创建了第一个API和第一个服务！
-
-									***
-									***
-									> 原文地址：<https://apigility.org/documentation/intro/installation>
-									> Github地址：<https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/installation.md>
-									> 如果翻译有误，请与作者联系：<vergil@vip.163.com>
-									> 如果对翻译Apigility文档有兴趣，请加入
-									>
-									> 原创翻译，转载请保留链接http://vergil.cn/archives/13/
+恭喜！你已经创建了第一个API和第一个服务！
