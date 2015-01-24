@@ -6,7 +6,7 @@
     
 如果你没有安装cURL，你可以使用php本身：
 
-	    php -r "readfile('https://apigility.org/install');" | php
+	php -r "readfile('https://apigility.org/install');" | php
 
 否则，你可以使用以下一个过程替代的`Apigility`安装。
 
@@ -20,7 +20,7 @@
 你可以从[Composer](http://getcomposer.org/)中使用`create-project`命令去创建项目：
 
 	curl -s https://getcomposer.org/installer | php --
-	 php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
+	php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
 
 ## 通过Git(Clone)
 首先，克隆代码库：
