@@ -1,5 +1,9 @@
-# 安装
-## 从终端安装：
+安装
+====
+
+从终端安装：
+-----------
+
 安装`Apigility`最容易的方法是从你的终端，执行以下命令：
 
     curl -sS https://apigility.org/install | php
@@ -10,19 +14,25 @@
 
 否则，你可以使用以下一个过程替代的`Apigility`安装。
 
-## 通过发行版tar包：
+通过发行版tar包：
+----------------
+
 从Apigility[下载](https://apigility.org/download)页面获取最新版本。
 解压它：
 
 	tar xzf zf-apigility-skeleton-1.0.0beta1.tgz
 
-## 通过Composer (create-project)
+通过Composer (create-project)
+-----------------------------
+
 你可以从[Composer](http://getcomposer.org/)中使用`create-project`命令去创建项目：
 
 	curl -s https://getcomposer.org/installer | php --
 	php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
 
-## 通过Git(Clone)
+通过Git(Clone)
+--------------
+
 首先，克隆代码库：
 
 	git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
@@ -33,7 +43,9 @@
 
 	composer.phar install
 
-## 所有的方法：
+所有的方法：
+-----------
+
 一旦你有了基本的安装，你需要把它放在开发模式：
 
 	cd path/to/install

@@ -1,48 +1,48 @@
-REST·þÎñ½Ì³Ì
+RESTæœåŠ¡æ•™ç¨‹
 ===========
 
-´´½¨Ò»¸öREST·þÎñ
-ÔÚÕâÒ»ÕÂÖÐ£¬ÎÒÃÇ½«´´½¨Ò»¸ö¼òµ¥µÄREST·þÎñ¡£
+åˆ›å»ºä¸€ä¸ªRESTæœåŠ¡
+åœ¨è¿™ä¸€ç« ä¸­ï¼Œæˆ‘ä»¬å°†åˆ›å»ºä¸€ä¸ªç®€å•çš„RESTæœåŠ¡ã€‚
 
-¼ÙÉè
+å‡è®¾
 ----
-±¾ÕÂ¼Ù¶¨ÄãÒÑ¾­ÔÄ¶Á²¢×ñÑ­[°²×°Ö¸ÄÏ](http://vergil.cn/archives/3/)ºÍ[ÈëÃÅÆª](http://vergil.cn/archives/13/)¡£Èç¹ûÄã»¹Ã»ÓÐ£¬Çë¼ÌÐøÖ®Ç°×öµÄ¡£
+æœ¬ç« å‡å®šä½ å·²ç»é˜…è¯»å¹¶éµå¾ª[å®‰è£…æŒ‡å—](http://vergil.cn/archives/3/)å’Œ[å…¥é—¨ç¯‡](http://vergil.cn/archives/13/)ã€‚å¦‚æžœä½ è¿˜æ²¡æœ‰ï¼Œè¯·ç»§ç»­ä¹‹å‰åšçš„ã€‚
 
-ÄãÐèÒª°²×°ºÍÅäÖÃ`zfcampus/statuslib-example`Ä£¿éÀ´Íê³É±¾½Ì³Ì¡£×ñÑ­ÕâÐ©²½Öè£º
+ä½ éœ€è¦å®‰è£…å’Œé…ç½®`zfcampus/statuslib-example`æ¨¡å—æ¥å®Œæˆæœ¬æ•™ç¨‹ã€‚éµå¾ªè¿™äº›æ­¥éª¤ï¼š
 
-²½Öè1
+æ­¥éª¤1
 -----
 
-ÔÚÄãµÄÓ¦ÓÃ³ÌÐòµÄ¸ùÄ¿Â¼£¬Ö´ÐÐÈçÏÂ£º
+åœ¨ä½ çš„åº”ç”¨ç¨‹åºçš„æ ¹ç›®å½•ï¼Œæ‰§è¡Œå¦‚ä¸‹ï¼š
 
 	$ php composer.phar require "zfcampus/statuslib-example:~1.0-dev"
 
-²½Öè2
+æ­¥éª¤2
 -----
 
-±à¼­ÎÄ¼þ`config/application.config.php`²¢ÇÒÌí¼Ó`StatusLib`Ä£¿é£º
+ç¼–è¾‘æ–‡ä»¶`config/application.config.php`å¹¶ä¸”æ·»åŠ `StatusLib`æ¨¡å—ï¼š
 
 	array(
 		'modules' => array(
 		/* ... */
-		¡®StatusLib',
+		â€˜StatusLib',
 		),
 		/* ... */
 	)
 
-²½Öè3
+æ­¥éª¤3
 -----
 
-´´½¨Ò»¸öphpÎÄ¼þ`data/statuslib.php`£¬·µ»ØÒ»¸öÊý×é£º
+åˆ›å»ºä¸€ä¸ªphpæ–‡ä»¶`data/statuslib.php`ï¼Œè¿”å›žä¸€ä¸ªæ•°ç»„ï¼š
 
 	<?php
 	return array();
-È·±£¸ÃÎÄ¼þµÄweb serverÓÃ»§¿ÉÐ´¡£
+ç¡®ä¿è¯¥æ–‡ä»¶çš„web serverç”¨æˆ·å¯å†™ã€‚
 
-²½Öè4
+æ­¥éª¤4
 -----
 
-±à¼­ÎÄ¼þ`config/autoload/local.php`£¬Ìí¼ÓÒÔÏÂÅäÖÃ£º
+ç¼–è¾‘æ–‡ä»¶`config/autoload/local.php`ï¼Œæ·»åŠ ä»¥ä¸‹é…ç½®ï¼š
 
 	return array(
 		/* ... */
@@ -51,236 +51,236 @@ REST·þÎñ½Ì³Ì
 		),
 	);
 
-²½Öè5
+æ­¥éª¤5
 -----
 
-×îºó£¬Äã½«ÐèÒªÒ»¸öÓÐÐ§µÄHTTP»ù±¾ÈÏÖ¤ÎÄ¼þ£¬Í¨³£Îª`htpasswd`¡£Äã¿ÉÒÔÉú³ÉÒ»¸öÊ¹ÓÃ[ApacheÌá¹©µÄ±ê×¼htpasswd¹¤¾ß](http://httpd.apache.org/docs/2.2/programs/htpasswd.html)£¬»òÕßÊ¹ÓÃÒ»¸ö[ÔÚÏßhtpasswdÉú³ÉÆ÷](http://www.htaccesstools.com/htpasswd-generator/)¡£´æ´¢`htpasswd`ÎÄ¼þÔÚÄúµÄÓ¦ÓÃ³ÌÐò`data/htpasswd`¡£Çë×¢ÒâÄãÊ¹ÓÃµÄÆ¾¾ÝÒÔ±ãÒÔºó¿ÉÒÔÊ¹ÓÃËüÃÇ¡£
+æœ€åŽï¼Œä½ å°†éœ€è¦ä¸€ä¸ªæœ‰æ•ˆçš„HTTPåŸºæœ¬è®¤è¯æ–‡ä»¶ï¼Œé€šå¸¸ä¸º`htpasswd`ã€‚ä½ å¯ä»¥ç”Ÿæˆä¸€ä¸ªä½¿ç”¨[Apacheæä¾›çš„æ ‡å‡†htpasswdå·¥å…·](http://httpd.apache.org/docs/2.2/programs/htpasswd.html)ï¼Œæˆ–è€…ä½¿ç”¨ä¸€ä¸ª[åœ¨çº¿htpasswdç”Ÿæˆå™¨](http://www.htaccesstools.com/htpasswd-generator/)ã€‚å­˜å‚¨`htpasswd`æ–‡ä»¶åœ¨æ‚¨çš„åº”ç”¨ç¨‹åº`data/htpasswd`ã€‚è¯·æ³¨æ„ä½ ä½¿ç”¨çš„å‡­æ®ä»¥ä¾¿ä»¥åŽå¯ä»¥ä½¿ç”¨å®ƒä»¬ã€‚
 
-Ò»µ©ÕâÐ©²½ÖèÍê³É£¬¼ÌÐø½Ì³Ì¡£
+ä¸€æ—¦è¿™äº›æ­¥éª¤å®Œæˆï¼Œç»§ç»­æ•™ç¨‹ã€‚
 
-ÊõÓï
+æœ¯è¯­
 ----
 
-ÔÚApigilityµÄÎÄµµÖÐ£¬ÌØ±ðÊÇÔÚÕâÒ»ÕÂÖÐ£¬Ê¹ÓÃÒÔÏÂÊõÓï£º
+åœ¨Apigilityçš„æ–‡æ¡£ä¸­ï¼Œç‰¹åˆ«æ˜¯åœ¨è¿™ä¸€ç« ä¸­ï¼Œä½¿ç”¨ä»¥ä¸‹æœ¯è¯­ï¼š
 
-* ÊµÌå£¨Entity£©£º
-·µ»ØÒ»¸ö¿ÉÑ°Ö·Ïî¡£ÊµÌåÊÇÒ»¸öURIµÄÎ¨Ò»±êÊ¶·û¡£
+* å®žä½“ï¼ˆEntityï¼‰ï¼š
+è¿”å›žä¸€ä¸ªå¯å¯»å€é¡¹ã€‚å®žä½“æ˜¯ä¸€ä¸ªURIçš„å”¯ä¸€æ ‡è¯†ç¬¦ã€‚
 
-* ¼¯ºÏ£¨Collection£©£º
-Ò»×é¿ÉÑ°Ö·µÄÊµÌå¡£Í¨³£Çé¿öÏÂ£¬¼¯ºÏÖÐ°üº¬µÄËùÓÐÊµÌå¶¼ÊÇÏàÍ¬ÀàÐÍµÄ£¬²¢ÇÒ¹²ÏíÏàÍ¬µÄ»ù±¾URI×÷Îª¼¯ºÏ¡£
+* é›†åˆï¼ˆCollectionï¼‰ï¼š
+ä¸€ç»„å¯å¯»å€çš„å®žä½“ã€‚é€šå¸¸æƒ…å†µä¸‹ï¼Œé›†åˆä¸­åŒ…å«çš„æ‰€æœ‰å®žä½“éƒ½æ˜¯ç›¸åŒç±»åž‹çš„ï¼Œå¹¶ä¸”å…±äº«ç›¸åŒçš„åŸºæœ¬URIä½œä¸ºé›†åˆã€‚
 
-* ×ÊÔ´£¨Resource£©£º
-½ÓÊÕ´«ÈëµÄÇëÇóÊý¾Ý£¬Ò»¸ö¶ÔÏóÈ·¶¨Ò»¸ö¼¯ºÏ»òÊµÌåÊÇ·ñÔÚURI±»È·¶¨£¬²¢ÇÒÈ·¶¨ÓÃÊ²Ã´¶¯×÷À´Ö´ÐÐ¡£
+* èµ„æºï¼ˆResourceï¼‰ï¼š
+æŽ¥æ”¶ä¼ å…¥çš„è¯·æ±‚æ•°æ®ï¼Œä¸€ä¸ªå¯¹è±¡ç¡®å®šä¸€ä¸ªé›†åˆæˆ–å®žä½“æ˜¯å¦åœ¨URIè¢«ç¡®å®šï¼Œå¹¶ä¸”ç¡®å®šç”¨ä»€ä¹ˆåŠ¨ä½œæ¥æ‰§è¡Œã€‚
 
-* Ïà¹ØÁ´½Ó£¨Relational Links£©£º
-Ò»¸öURIµ½¾ßÓÐËùÃèÊöµÄ¹ØÏµ×ÊÔ´Ïà¹ØµÄÁ´½Ó¡£ÔÊÐíÄãÀ´ÃèÊö²»Í¬µÄÊµÌåºÍ¼¯ºÏÖ®¼äµÄ¹ØÏµ¡£ÒÔ¼°Ö±½ÓÁ´½Óµ½ËüÃÇ£¬Ê¹web¿Í»§¶Ë¿ÉÒÔ¶ÔÕâÐ©¹ØÏµ½øÐÐ²Ù×÷¡£ÕâÐ©ÓÐÊ±Ò²³¬Ã½ÌåµÄÁ´½Ó¡£
+* ç›¸å…³é“¾æŽ¥ï¼ˆRelational Linksï¼‰ï¼š
+ä¸€ä¸ªURIåˆ°å…·æœ‰æ‰€æè¿°çš„å…³ç³»èµ„æºç›¸å…³çš„é“¾æŽ¥ã€‚å…è®¸ä½ æ¥æè¿°ä¸åŒçš„å®žä½“å’Œé›†åˆä¹‹é—´çš„å…³ç³»ã€‚ä»¥åŠç›´æŽ¥é“¾æŽ¥åˆ°å®ƒä»¬ï¼Œä½¿webå®¢æˆ·ç«¯å¯ä»¥å¯¹è¿™äº›å…³ç³»è¿›è¡Œæ“ä½œã€‚è¿™äº›æœ‰æ—¶ä¹Ÿè¶…åª’ä½“çš„é“¾æŽ¥ã€‚
 
-REST·þÎñ·µ»ØÊµÌåºÍ¼¯ºÏ£¬²¢Ìá¹©Ïà¹ØµÄÊµÌåºÍ¼¯ºÏÖ®¼äµÄ³¬Ã½ÌåÁ´½Ó¡£×ÊÔ´¶ÔÏóµÄÐ­µ÷ÐÐ¶¯£¬²¢·µ»ØÊµÌåºÍ¼¯ºÏ¡£
+RESTæœåŠ¡è¿”å›žå®žä½“å’Œé›†åˆï¼Œå¹¶æä¾›ç›¸å…³çš„å®žä½“å’Œé›†åˆä¹‹é—´çš„è¶…åª’ä½“é“¾æŽ¥ã€‚èµ„æºå¯¹è±¡çš„åè°ƒè¡ŒåŠ¨ï¼Œå¹¶è¿”å›žå®žä½“å’Œé›†åˆã€‚
 
-´´½¨Ò»¸öREST·þÎñ
+åˆ›å»ºä¸€ä¸ªRESTæœåŠ¡
 ---------------
 
-ÔÚ±¾ÕÂÖÐ£¬ÎÒÃÇ½«¹¹½¨Ò»¸öREST·þÎñÊ¾Àý¡£
+åœ¨æœ¬ç« ä¸­ï¼Œæˆ‘ä»¬å°†æž„å»ºä¸€ä¸ªRESTæœåŠ¡ç¤ºä¾‹ã€‚
 
-µ¼º½µ½¡°APIs¡±Ò³Ãæ£¬È»ºóÔÚÎÒÃÇÇ°ÃæµÄÕÂ½ÚÖÐ´´½¨µÄ¡°Status¡±API¡£ÏÂÒ»²½£¬Ñ¡Ôñ¡°REST Services¡±²Ëµ¥Ïî¡£
+å¯¼èˆªåˆ°â€œAPIsâ€é¡µé¢ï¼Œç„¶åŽåœ¨æˆ‘ä»¬å‰é¢çš„ç« èŠ‚ä¸­åˆ›å»ºçš„â€œStatusâ€APIã€‚ä¸‹ä¸€æ­¥ï¼Œé€‰æ‹©â€œREST Servicesâ€èœå•é¡¹ã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-rest-services.png)
 
-µã»÷¡°Create New REST Service¡±°´Å¥
+ç‚¹å‡»â€œCreate New REST Serviceâ€æŒ‰é’®
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-new-rest-service.png)
 
-Õâ¸ö¶Ô»°¿òÓÐÁ½¸öÑ¡Ïî¿¨¡£Ò»¸öÊÇ´´½¨¡°Code-Connected£¨´úÂëÁ´½Ó£©¡±·þÎñ£¬ÁíÒ»¸öÊÇ´´½¨¡°DB-Connected£¨Êý¾Ý¿âÁ´½Ó£©¡±·þÎñ
+è¿™ä¸ªå¯¹è¯æ¡†æœ‰ä¸¤ä¸ªé€‰é¡¹å¡ã€‚ä¸€ä¸ªæ˜¯åˆ›å»ºâ€œCode-Connectedï¼ˆä»£ç é“¾æŽ¥ï¼‰â€æœåŠ¡ï¼Œå¦ä¸€ä¸ªæ˜¯åˆ›å»ºâ€œDB-Connectedï¼ˆæ•°æ®åº“é“¾æŽ¥ï¼‰â€æœåŠ¡
 
 > ### Code-Connected vs DB-Connected services
-> µ±Äã´´½¨Ò»¸ö´úÂëÁ¬½Ó·þÎñ£¬Apigility´´½¨¶¨ÒåÁËREST·þÎñµÄËùÓÐ¿ÉÓÃµÄ¸÷ÖÖ²Ù×÷´æ¸ù£¨Ô­ÎÄ£ºstub "Resource" class£©¡°×ÊÔ´¡±Àà¡£ÕâÐ©²Ù×÷·µ»Ø¡°405 Method Not Allowed¡±µÄÏìÓ¦£¬Ö±µ½ÄãÌîÐ´Äã×Ô¼ºµÄ´úÂë¡£¡°´úÂëÁ¬½Ó¡±·½ÃæÒâÎ¶×ÅÄã½«Ìá¹©Ö´ÐÐÄãµÄAPIµÄÊµ¼Ê¹¤×÷ÖÐµÄ´úÂë; ApigilityÌá¹©ÓÃÓÚ±©Â¶¸Ã´úÂë×÷ÎªÒ»¸öAPI½ÓÏß¡£
+> å½“ä½ åˆ›å»ºä¸€ä¸ªä»£ç è¿žæŽ¥æœåŠ¡ï¼ŒApigilityåˆ›å»ºå®šä¹‰äº†RESTæœåŠ¡çš„æ‰€æœ‰å¯ç”¨çš„å„ç§æ“ä½œå­˜æ ¹ï¼ˆåŽŸæ–‡ï¼šstub "Resource" classï¼‰â€œèµ„æºâ€ç±»ã€‚è¿™äº›æ“ä½œè¿”å›žâ€œ405 Method Not Allowedâ€çš„å“åº”ï¼Œç›´åˆ°ä½ å¡«å†™ä½ è‡ªå·±çš„ä»£ç ã€‚â€œä»£ç è¿žæŽ¥â€æ–¹é¢æ„å‘³ç€ä½ å°†æä¾›æ‰§è¡Œä½ çš„APIçš„å®žé™…å·¥ä½œä¸­çš„ä»£ç ; Apigilityæä¾›ç”¨äºŽæš´éœ²è¯¥ä»£ç ä½œä¸ºä¸€ä¸ªAPIæŽ¥çº¿ã€‚
 >
-Êý¾Ý¿âÁ¬½Ó·þÎñÔÊÐíÄãÖ¸¶¨Ò»¸öÊý¾Ý¿âÊÊÅäÆ÷ºÍÒ»¸öÊý¾Ý±í¡£È»ºóApigility´´½¨Ò»¸ö¡°ÐéÄâ¡±×ÊÔ´£¬Ëü´ú±íÎ¯ÍÐ²Ù×÷µ½µ×²ãµÄ`Zend\Db\TableGateway\TableGateway`ÊµÀý¡£»»¾ä»°Ëµ£¬Ëü¸ü¿ìËÙÓ¦ÓÃ³ÌÐò¿ª·¢£¨rapid application development£¬RAD£©»òÔ­ÐÍ¹¤¾ß¡£
+æ•°æ®åº“è¿žæŽ¥æœåŠ¡å…è®¸ä½ æŒ‡å®šä¸€ä¸ªæ•°æ®åº“é€‚é…å™¨å’Œä¸€ä¸ªæ•°æ®è¡¨ã€‚ç„¶åŽApigilityåˆ›å»ºä¸€ä¸ªâ€œè™šæ‹Ÿâ€èµ„æºï¼Œå®ƒä»£è¡¨å§”æ‰˜æ“ä½œåˆ°åº•å±‚çš„`Zend\Db\TableGateway\TableGateway`å®žä¾‹ã€‚æ¢å¥è¯è¯´ï¼Œå®ƒæ›´å¿«é€Ÿåº”ç”¨ç¨‹åºå¼€å‘ï¼ˆrapid application developmentï¼ŒRADï¼‰æˆ–åŽŸåž‹å·¥å…·ã€‚
 
-ÔÚÕâ¸öÁ·Ï°£¬ÎÒÃÇ½«´´½¨´úÂëÁ¬½Ó¡£ÔÚ¡°REST Service Name¡±ÊäÈë¡°Status¡±£¬È»ºó°´¡°Create Code-Connected REST Service¡±¡£Ò»µ©·þÎñ³É¹¦´´½¨ºó£¬µã»÷ÉÏÃæÐ´×Å¡°Status¡±µÄÑÕÉ«À¸½«ÆäÕ¹¿ª²¢¿ÉÒÔ²é¿´·þÎñ¡£
+åœ¨è¿™ä¸ªç»ƒä¹ ï¼Œæˆ‘ä»¬å°†åˆ›å»ºä»£ç è¿žæŽ¥ã€‚åœ¨â€œREST Service Nameâ€è¾“å…¥â€œStatusâ€ï¼Œç„¶åŽæŒ‰â€œCreate Code-Connected REST Serviceâ€ã€‚ä¸€æ—¦æœåŠ¡æˆåŠŸåˆ›å»ºåŽï¼Œç‚¹å‡»ä¸Šé¢å†™ç€â€œStatusâ€çš„é¢œè‰²æ å°†å…¶å±•å¼€å¹¶å¯ä»¥æŸ¥çœ‹æœåŠ¡ã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-status-settings.png)
 
-ApigilityÌá¹©ÁËÐí¶àºÏÀíµÄÄ¬ÈÏÖµ£º
+Apigilityæä¾›äº†è®¸å¤šåˆç†çš„é»˜è®¤å€¼ï¼š
 
-* ¼¯ºÏÖ»ÔÊÐí`GET`£¨»ñÈ¡ÁÐ±í£©ºÍ`POST`£¨´´½¨ÐÂÊµÌå£©²Ù×÷¡£
-* ÊµÌåÔÊÐí`GET`£¨»ñÈ¡ÊµÌå£©£¬`PUT`£¨Ìæ»»ÊµÌå£©£¬`PATCH`£¨Ö´ÐÐ²¿·Ö¸üÐÂ£©ºÍ`DELETE`£¨É¾³ýÊµÌå£©²Ù×÷¡£
-* Èç¹ûÄãµÄ¼¯ºÏÖ§³Ö·ÖÒ³²Ù×÷£¬Apigility½«ÏÞÖÆÎªÃ¿Ò³25¸ö×ÊÔ´¡£
-* Apigility´´½¨Ò»¸ö»ùÓÚ·þÎñÃû³ÆµÄÂ·ÓÉURI£¨ÀýÈç£¬`/status[/:status_id]`£©
+* é›†åˆåªå…è®¸`GET`ï¼ˆèŽ·å–åˆ—è¡¨ï¼‰å’Œ`POST`ï¼ˆåˆ›å»ºæ–°å®žä½“ï¼‰æ“ä½œã€‚
+* å®žä½“å…è®¸`GET`ï¼ˆèŽ·å–å®žä½“ï¼‰ï¼Œ`PUT`ï¼ˆæ›¿æ¢å®žä½“ï¼‰ï¼Œ`PATCH`ï¼ˆæ‰§è¡Œéƒ¨åˆ†æ›´æ–°ï¼‰å’Œ`DELETE`ï¼ˆåˆ é™¤å®žä½“ï¼‰æ“ä½œã€‚
+* å¦‚æžœä½ çš„é›†åˆæ”¯æŒåˆ†é¡µæ“ä½œï¼ŒApigilityå°†é™åˆ¶ä¸ºæ¯é¡µ25ä¸ªèµ„æºã€‚
+* Apigilityåˆ›å»ºä¸€ä¸ªåŸºäºŽæœåŠ¡åç§°çš„è·¯ç”±URIï¼ˆä¾‹å¦‚ï¼Œ`/status[/:status_id]`ï¼‰
 
-> ### URIÂ·ÓÉ
-> ApigilityÔËÐÐÔÚZend Framework 2 MVC¼Ü¹¹Ö®ÉÏ£¬²¢ÇÒÒò´ËÊ¹ÓÃÆä[Â·ÓÉÒýÇæ](http://framework.zend.com/manual/2.3/en/modules/zend.mvc.routing.html)¡£
+> ### URIè·¯ç”±
+> Apigilityè¿è¡Œåœ¨Zend Framework 2 MVCæž¶æž„ä¹‹ä¸Šï¼Œå¹¶ä¸”å› æ­¤ä½¿ç”¨å…¶[è·¯ç”±å¼•æ“Ž](http://framework.zend.com/manual/2.3/en/modules/zend.mvc.routing.html)ã€‚
 >
-> Í¨¹ýApigilityÉú³ÉµÄÂ·ÓÉ¶¼ÊÇËùÎ½µÄ¡°Segment¡±Â·ÓÉ¡£ËüÔÊÐíÄã£º
+> é€šè¿‡Apigilityç”Ÿæˆçš„è·¯ç”±éƒ½æ˜¯æ‰€è°“çš„â€œSegmentâ€è·¯ç”±ã€‚å®ƒå…è®¸ä½ ï¼š
 >
-> * Ö¸¶¨URIµÄ¿ÉÑ¡²¿·Ö£¬Ê¹ÓÃ`[]`Óï·¨¡£
-> * Ö¸¶¨ÃüÃû²ÎÊýÊ¹ÓÃ`:varName`»ò`:var_name`Æ¥Åä¡£
-> * Ö¸¶¨µÄ×ÖÃæÆ¥Åä;Ã»ÓÐÒ»¸öÃüÃû²ÎÊý£¬»ò»¨À¨ºÅ£¨`{}`£©ÄÚ±»ÈÏÎªÊÇÎÄ×Ö¡£
+> * æŒ‡å®šURIçš„å¯é€‰éƒ¨åˆ†ï¼Œä½¿ç”¨`[]`è¯­æ³•ã€‚
+> * æŒ‡å®šå‘½åå‚æ•°ä½¿ç”¨`:varName`æˆ–`:var_name`åŒ¹é…ã€‚
+> * æŒ‡å®šçš„å­—é¢åŒ¹é…;æ²¡æœ‰ä¸€ä¸ªå‘½åå‚æ•°ï¼Œæˆ–èŠ±æ‹¬å·ï¼ˆ`{}`ï¼‰å†…è¢«è®¤ä¸ºæ˜¯æ–‡å­—ã€‚
 >
-> ¶ÔÓÚREST·þÎñ£¬¸ÃURIÉú³É¶¼Ç¿ÖÆÐÔÆ¥ÅäÆä±¾ÉíµÄ×ÖÃæ¡£µ±ÓÉµ¥¶ÀÖ¸¶¨£¬½âÎöÎªÒ»¸ö¼¯ºÏ¡£ÔÚÉÏÃæµÄÀý×ÓÖÐ£¬ÕâÂ·¾¶ÊÇ`/Status`¡£Ò²ÓÐÒ»¸öÃüÃû²ÎÊýµÄ¿ÉÑ¡²¿·Ö£¬³ÆÎª¡°ÊµÌå±êÊ¶·û¡±£º[/:status_id]¡£Õâ½«»áÆ¥ÅäÈç`/status/foo`, `/status/2`, `/status/96fa5ac9-3ae2-45b2-84d5-c346936be292`ÕâÑùµÄURI¡£
+> å¯¹äºŽRESTæœåŠ¡ï¼Œè¯¥URIç”Ÿæˆéƒ½å¼ºåˆ¶æ€§åŒ¹é…å…¶æœ¬èº«çš„å­—é¢ã€‚å½“ç”±å•ç‹¬æŒ‡å®šï¼Œè§£æžä¸ºä¸€ä¸ªé›†åˆã€‚åœ¨ä¸Šé¢çš„ä¾‹å­ä¸­ï¼Œè¿™è·¯å¾„æ˜¯`/Status`ã€‚ä¹Ÿæœ‰ä¸€ä¸ªå‘½åå‚æ•°çš„å¯é€‰éƒ¨åˆ†ï¼Œç§°ä¸ºâ€œå®žä½“æ ‡è¯†ç¬¦â€ï¼š[/:status_id]ã€‚è¿™å°†ä¼šåŒ¹é…å¦‚`/status/foo`, `/status/2`, `/status/96fa5ac9-3ae2-45b2-84d5-c346936be292`è¿™æ ·çš„URIã€‚
 >
-> ×¢Òâ£º¼¯ºÏURIºÍÖ¸¶¨µÄÊµÌåURIÊ±²ÅÄÜÖÆ¶¨ÊµÌåÖ®¼äµÄ/£¬Äã²»ÄÜÒÔÐ±Ïß£¨/£©ÇëÇó¼¯ºÏ¡£
-> ÎªÊ²Ã´£¿ÒòÎªRESTµÄ×ÚÖ¼ÊÇÒ»¸öURI´ú±íÒ»¸ö×ÊÔ´¡£Èç¹ûÎÒÃÇÔÊÐíÒ»¸öÐ±Ïß£¨/£©£¬ÎÒÃÇ»á±»ÔÊÐí¶à¸öURIÀ´½âÎöµ½ÏàÍ¬µÄ×ÊÔ´¡£
+> æ³¨æ„ï¼šé›†åˆURIå’ŒæŒ‡å®šçš„å®žä½“URIæ—¶æ‰èƒ½åˆ¶å®šå®žä½“ä¹‹é—´çš„/ï¼Œä½ ä¸èƒ½ä»¥æ–œçº¿ï¼ˆ/ï¼‰è¯·æ±‚é›†åˆã€‚
+> ä¸ºä»€ä¹ˆï¼Ÿå› ä¸ºRESTçš„å®—æ—¨æ˜¯ä¸€ä¸ªURIä»£è¡¨ä¸€ä¸ªèµ„æºã€‚å¦‚æžœæˆ‘ä»¬å…è®¸ä¸€ä¸ªæ–œçº¿ï¼ˆ/ï¼‰ï¼Œæˆ‘ä»¬ä¼šè¢«å…è®¸å¤šä¸ªURIæ¥è§£æžåˆ°ç›¸åŒçš„èµ„æºã€‚
 
 
-Õ¹¿ª¡°REST Parameters¡±²¿·Ö£¬Äã»á¿´µ½ÃûÎª¡°Hydrator Service Name¡±µÄ×Ö¶ÎºÍ`Zend\Stdlib\Hydrator\ArraySerializable`µÄÖµ¡£ÎÒÃÇÒª¸Ä±äËüÓëÎÒÃÇ`StatusLib`Ê¾Àý¿â¹¤×÷¡£
+å±•å¼€â€œREST Parametersâ€éƒ¨åˆ†ï¼Œä½ ä¼šçœ‹åˆ°åä¸ºâ€œHydrator Service Nameâ€çš„å­—æ®µå’Œ`Zend\Stdlib\Hydrator\ArraySerializable`çš„å€¼ã€‚æˆ‘ä»¬è¦æ”¹å˜å®ƒä¸Žæˆ‘ä»¬`StatusLib`ç¤ºä¾‹åº“å·¥ä½œã€‚
 
-½«Êó±êÐü¸¡ÔÚ¸Ã·þÎñµÄ±êÌâÀ¸ÉÏ³öÏÖÂÌÉ«µÄ¡°edit¡±°´Å¥¡£µã»÷ËüÈ»ºóÕ¹¿ª¡°REST Parameters¡±²¿·Ö¡£ÔÚ¡°Hydrator Service Name¡±Ñ¡Ïî£¬Ñ¡ÔñZend\Stdlib\Hydrator\ObjectProperty¡£
+å°†é¼ æ ‡æ‚¬æµ®åœ¨è¯¥æœåŠ¡çš„æ ‡é¢˜æ ä¸Šå‡ºçŽ°ç»¿è‰²çš„â€œeditâ€æŒ‰é’®ã€‚ç‚¹å‡»å®ƒç„¶åŽå±•å¼€â€œREST Parametersâ€éƒ¨åˆ†ã€‚åœ¨â€œHydrator Service Nameâ€é€‰é¡¹ï¼Œé€‰æ‹©Zend\Stdlib\Hydrator\ObjectPropertyã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-settings-edit.png)
 
 > ### Hydrators
-> HydratorsÊÇ¶ÔÏó£¬ÔÊÐí¹¹ÔìÒ»¸ö¹ØÁªÊý×éµ½Ò»¸öÌØ¶¨µÄ¶ÔÏóÀàÐÍ£¬·´Ö®ÒàÈ»¡£Ã¿¸öhydratorÊ¹ÓÃÁË²»Í¬µÄ²ßÂÔ£¬ÈçºÎ×öµ½ÕâÒ»µã¡£ApigilityÊ¹ÓÃÄ¬ÈÏµÄhydratorÀàÐÍÊÇ
-`ArraySerializable`ËüÆÚÍûÄ¿µÄÊµÏÖÁ½¸ö·½·¨£º
+> Hydratorsæ˜¯å¯¹è±¡ï¼Œå…è®¸æž„é€ ä¸€ä¸ªå…³è”æ•°ç»„åˆ°ä¸€ä¸ªç‰¹å®šçš„å¯¹è±¡ç±»åž‹ï¼Œåä¹‹äº¦ç„¶ã€‚æ¯ä¸ªhydratorä½¿ç”¨äº†ä¸åŒçš„ç­–ç•¥ï¼Œå¦‚ä½•åšåˆ°è¿™ä¸€ç‚¹ã€‚Apigilityä½¿ç”¨é»˜è®¤çš„hydratorç±»åž‹æ˜¯
+`ArraySerializable`å®ƒæœŸæœ›ç›®çš„å®žçŽ°ä¸¤ä¸ªæ–¹æ³•ï¼š
 > 
-> * `getArrayCopy()` ÓÃÓÚ»ñÈ¡Ò»¸öÊý×éµÄ¸±±¾
-> * `exchangeArray($array)` ÓÃÓÚ¹¹ÔìÒ»¸öÊý×é¶ÔÏó
+> * `getArrayCopy()` ç”¨äºŽèŽ·å–ä¸€ä¸ªæ•°ç»„çš„å‰¯æœ¬
+> * `exchangeArray($array)` ç”¨äºŽæž„é€ ä¸€ä¸ªæ•°ç»„å¯¹è±¡
 >
-> £¨ÕâÐ©·½·¨µÄÊ¹ÓÃºÍPHPµÄ`ArrayObject`Ò»Ñù£¡£©
+> ï¼ˆè¿™äº›æ–¹æ³•çš„ä½¿ç”¨å’ŒPHPçš„`ArrayObject`ä¸€æ ·ï¼ï¼‰
 >
-> `ObjectProperty` hydrator´´½¨Ò»¸öÊý×éµÄ¸±±¾Ê±½«»ñÈ¡¶ÔÏóµÄËùÓÐ¹«¹²ÊôÐÔ£¬ºÍ¹¹Ôì¶ÔÏóÊ±´ÓÊý×éÌî³ä¶ÔÏóµÄ¹«¸æÊôÐÔ¡£
+> `ObjectProperty` hydratoråˆ›å»ºä¸€ä¸ªæ•°ç»„çš„å‰¯æœ¬æ—¶å°†èŽ·å–å¯¹è±¡çš„æ‰€æœ‰å…¬å…±å±žæ€§ï¼Œå’Œæž„é€ å¯¹è±¡æ—¶ä»Žæ•°ç»„å¡«å……å¯¹è±¡çš„å…¬å‘Šå±žæ€§ã€‚
 
-ÔÚÎÒÃÇµÄÊ¾ÀýÖÐ£¬`StatusLib`¿âÌá¹©×Ô¼ºµÄÊµÀýºÍ¼¯ºÏÀà¡£Í¨¹ýµã»÷±êÌâÀ¸Õ¹¿ª¡°Service Class Names¡±Ãæ°å£¬²¢ÇÒ±à¼­¡°Entity Class¡±×Ö¶Î¶ÁÈ¡`StatusLib\Entity`ºÍ¡°Collection Class¡±×Ö¶Î¶ÁÈ¡`StatusLib\Collection`¡£
+åœ¨æˆ‘ä»¬çš„ç¤ºä¾‹ä¸­ï¼Œ`StatusLib`åº“æä¾›è‡ªå·±çš„å®žä¾‹å’Œé›†åˆç±»ã€‚é€šè¿‡ç‚¹å‡»æ ‡é¢˜æ å±•å¼€â€œService Class Namesâ€é¢æ¿ï¼Œå¹¶ä¸”ç¼–è¾‘â€œEntity Classâ€å­—æ®µè¯»å–`StatusLib\Entity`å’Œâ€œCollection Classâ€å­—æ®µè¯»å–`StatusLib\Collection`ã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-settings-classes.png)
 
 > ### Service Classes
-> µ±Äã´´½¨Ò»¸ö´úÂëÁ¬½ÓµÄ·þÎñ£¬ApigilityÎªÄãÉú³ÉÁË4¸öPHPÀàÎÄ¼þ£º
+> å½“ä½ åˆ›å»ºä¸€ä¸ªä»£ç è¿žæŽ¥çš„æœåŠ¡ï¼ŒApigilityä¸ºä½ ç”Ÿæˆäº†4ä¸ªPHPç±»æ–‡ä»¶ï¼š
 >
-> * Ò»¸öÊµÌåÀà¡£
-> * Ò»¸ö¼¯ºÏÀà¼Ì³Ð×ÔZend\Paginator\Paginator¡£Õâ½«»áÔÊÐíÄãÌá¹©·ÖÒ³½á¹û¼¯¡£
-> * Ò»¸ö×ÊÔ´ÀàÓÃÓÚÖ´ÐÐ²Ù×÷¡£
-> * Ò»¸ö¹¤³§ÀàÓÃÓÚ´´½¨×ÊÔ´¡£
+> * ä¸€ä¸ªå®žä½“ç±»ã€‚
+> * ä¸€ä¸ªé›†åˆç±»ç»§æ‰¿è‡ªZend\Paginator\Paginatorã€‚è¿™å°†ä¼šå…è®¸ä½ æä¾›åˆ†é¡µç»“æžœé›†ã€‚
+> * ä¸€ä¸ªèµ„æºç±»ç”¨äºŽæ‰§è¡Œæ“ä½œã€‚
+> * ä¸€ä¸ªå·¥åŽ‚ç±»ç”¨äºŽåˆ›å»ºèµ„æºã€‚
 >
-> ÄãµÄ´úÂë¿ÉÄÜÒÑ¾­È·¶¨ÁËÊµÌåÀàºÍ¼¯ºÏÀà£¬ËùÒÔÄã¿ÉÒÔ×ÔÓÉµØºöÂÔApigility´´½¨µÄ´æ¸ù£¨stub£©Àà£¨Ö¸ÉÏÊöApigilityÉú³ÉµÄÀà£©¡£µ«ÊÇ×¢Òâ£ºÈç¹ûÄã×îÖÕ°æ±¾µÄAPI£¬Äã¿ÉÄÜ»á·¢ÏÖÓÐÌØ¶¨°æ±¾µÄÊµÌåºÍ¼¯ºÏÀà¿ÉÄÜÊÇÓÐÓÃµÄ¡£ÒòÎªËüÃÇ¿ÉÒÔÈÃÄãµÄÄ£ÐÍÔÚÃ¿¸öÌØ¶¨µÄ°æ±¾±©Â¶³öÖ»ÓÐÄãÏë±©Â¶µÄÊôÐÔ¡£
+> ä½ çš„ä»£ç å¯èƒ½å·²ç»ç¡®å®šäº†å®žä½“ç±»å’Œé›†åˆç±»ï¼Œæ‰€ä»¥ä½ å¯ä»¥è‡ªç”±åœ°å¿½ç•¥Apigilityåˆ›å»ºçš„å­˜æ ¹ï¼ˆstubï¼‰ç±»ï¼ˆæŒ‡ä¸Šè¿°Apigilityç”Ÿæˆçš„ç±»ï¼‰ã€‚ä½†æ˜¯æ³¨æ„ï¼šå¦‚æžœä½ æœ€ç»ˆç‰ˆæœ¬çš„APIï¼Œä½ å¯èƒ½ä¼šå‘çŽ°æœ‰ç‰¹å®šç‰ˆæœ¬çš„å®žä½“å’Œé›†åˆç±»å¯èƒ½æ˜¯æœ‰ç”¨çš„ã€‚å› ä¸ºå®ƒä»¬å¯ä»¥è®©ä½ çš„æ¨¡åž‹åœ¨æ¯ä¸ªç‰¹å®šçš„ç‰ˆæœ¬æš´éœ²å‡ºåªæœ‰ä½ æƒ³æš´éœ²çš„å±žæ€§ã€‚
 
-ÏÖÔÚ£¬Ñ¡ÔñÆÁÄ»µ×²¿µÄÂÌÉ«¡°Save¡±°´Å¥¡£
-ÏÂÒ»²½£¬ÎÒÃÇ¶¨ÒåÒ»Ð©×Ö¶ÎºÍÎÒÃÇµÄAPIÎÄµµ¡£
+çŽ°åœ¨ï¼Œé€‰æ‹©å±å¹•åº•éƒ¨çš„ç»¿è‰²â€œSaveâ€æŒ‰é’®ã€‚
+ä¸‹ä¸€æ­¥ï¼Œæˆ‘ä»¬å®šä¹‰ä¸€äº›å­—æ®µå’Œæˆ‘ä»¬çš„APIæ–‡æ¡£ã€‚
 
-¶¨ÒåÎÒÃÇµÄ·þÎñµÄ×Ö¶Î
+å®šä¹‰æˆ‘ä»¬çš„æœåŠ¡çš„å­—æ®µ
 ------------------
 
-ÎÒÃÇ½«¶¨Òå×Ö¶Î£º
+æˆ‘ä»¬å°†å®šä¹‰å­—æ®µï¼š
 
-* `message` - ×´Ì¬ÐÅÏ¢¡£Ëü±ØÐëÊÇ·Ç¿ÕµÄ£¬²¢ÇÒ²»³¬¹ý140¸ö×Ö·û¡£
-* `user` - ÓÃ»§Ìá¹©µÄ×´Ì¬ÐÅÏ¢¡£Ëü±ØÐëÊÇ·Ç¿ÕµÄ£¬²¢ÇÒÂú×ãÒ»¸öÕýÔò±í´ïÊ½¡£
-* `timestamp` - ÕûÐÍµÄÊ±¼ä´Á¡£Ëü²»ÊÇ±ØÐëÌá½»µÄ£¬µ«Èç¹ûÌá½»£¬Ö»ÄÜÊÇÊý×Ö¡£Ëü×ÜÊÇÔÚÏìÓ¦ÖÐ·µ»Ø¡£
+* `message` - çŠ¶æ€ä¿¡æ¯ã€‚å®ƒå¿…é¡»æ˜¯éžç©ºçš„ï¼Œå¹¶ä¸”ä¸è¶…è¿‡140ä¸ªå­—ç¬¦ã€‚
+* `user` - ç”¨æˆ·æä¾›çš„çŠ¶æ€ä¿¡æ¯ã€‚å®ƒå¿…é¡»æ˜¯éžç©ºçš„ï¼Œå¹¶ä¸”æ»¡è¶³ä¸€ä¸ªæ­£åˆ™è¡¨è¾¾å¼ã€‚
+* `timestamp` - æ•´åž‹çš„æ—¶é—´æˆ³ã€‚å®ƒä¸æ˜¯å¿…é¡»æäº¤çš„ï¼Œä½†å¦‚æžœæäº¤ï¼Œåªèƒ½æ˜¯æ•°å­—ã€‚å®ƒæ€»æ˜¯åœ¨å“åº”ä¸­è¿”å›žã€‚
 
-ÎÒÃÇÒ²»áÓÐÒ»¸ö`id`µÄ×Ö¶Î£¬µ«ÕâÖ»ÊÇÎªÁËÕ¹Ê¾¡£
+æˆ‘ä»¬ä¹Ÿä¼šæœ‰ä¸€ä¸ª`id`çš„å­—æ®µï¼Œä½†è¿™åªæ˜¯ä¸ºäº†å±•ç¤ºã€‚
 
-µ¼º½µ½¡°Fields¡±Ñ¡Ïî¿¨£¬È»ºó±à¼­·þÎñ£¨ÂÌÉ«µÄ¡°Edit¡±°´Å¥£¬¿ÉÒÔÍ¨¹ýÊó±êÐüÍ£ÔÚ·þÎñµÄ±êÌâÀ¸ÕÒµ½£©
+å¯¼èˆªåˆ°â€œFieldsâ€é€‰é¡¹å¡ï¼Œç„¶åŽç¼–è¾‘æœåŠ¡ï¼ˆç»¿è‰²çš„â€œEditâ€æŒ‰é’®ï¼Œå¯ä»¥é€šè¿‡é¼ æ ‡æ‚¬åœåœ¨æœåŠ¡çš„æ ‡é¢˜æ æ‰¾åˆ°ï¼‰
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-fields-edit.png)
 
-ÔÚÃûÎª¡°Field name¡±µÄÎÄ±¾ÊäÈë¿òÊäÈë¡°message¡±£¬È»ºó°´`»Ø³µ`À´´´½¨ÐÂµÄ×Ö¶Î¡£
+åœ¨åä¸ºâ€œField nameâ€çš„æ–‡æœ¬è¾“å…¥æ¡†è¾“å…¥â€œmessageâ€ï¼Œç„¶åŽæŒ‰`å›žè½¦`æ¥åˆ›å»ºæ–°çš„å­—æ®µã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-message-field.png)
 
-ÏÖÔÚ£¬ÓÃÍ¬ÑùµÄ·½·¨´´½¨¡°user¡±ºÍ¡°timestamp¡±×Ö¶Î
+çŽ°åœ¨ï¼Œç”¨åŒæ ·çš„æ–¹æ³•åˆ›å»ºâ€œuserâ€å’Œâ€œtimestampâ€å­—æ®µ
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-all-fields.png)
 
-µã»÷±êÓÐ¡°message¡±µÄÂÌÉ«À¸ÖÐÈÎÒâÎ»ÖÃÀ´Õ¹¿ªËü¡£
+ç‚¹å‡»æ ‡æœ‰â€œmessageâ€çš„ç»¿è‰²æ ä¸­ä»»æ„ä½ç½®æ¥å±•å¼€å®ƒã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-message-edit.png)
 
-ÔÚ¡°Description£¨ÃèÊö£©¡±ÖÐÊäÈë¡°A status message of no more than 140 characters.£¨×´Ì¬ÐÅÏ¢²»ÄÜ³¬¹ý140¸ö×Ö·û£©¡±¡£ÔÚ¡°ValidationValidate Failure Message£¨ÑéÖ¤Ê§°ÜÏûÏ¢£©¡±ÖÐÊäÈë¡°A status message must contain between 1 and 140 characters.£¨×´Ì¬ÐÅÏ¢±ØÐë°üº¬1ÖÁ140¸ö×Ö·û£©¡±¡£
+åœ¨â€œDescriptionï¼ˆæè¿°ï¼‰â€ä¸­è¾“å…¥â€œA status message of no more than 140 characters.ï¼ˆçŠ¶æ€ä¿¡æ¯ä¸èƒ½è¶…è¿‡140ä¸ªå­—ç¬¦ï¼‰â€ã€‚åœ¨â€œValidationValidate Failure Messageï¼ˆéªŒè¯å¤±è´¥æ¶ˆæ¯ï¼‰â€ä¸­è¾“å…¥â€œA status message must contain between 1 and 140 characters.ï¼ˆçŠ¶æ€ä¿¡æ¯å¿…é¡»åŒ…å«1è‡³140ä¸ªå­—ç¬¦ï¼‰â€ã€‚
 
-½«Êó±êÐüÍ£ÔÚ¡°Filters£¨¹ýÂËÆ÷£©¡±À¸²¢ÇÒ°´¡°Add Filter¡±°´Å¥Õ¹Ê¾¡°Add Filter¡±±íµ¥¡£ÔÚÑ¡Ôñ¿òÑ¡Ôñ`Zend\Filter\StringTrim`£¨ÌáÊ¾£ºÊäÈë¡°trim¡±ÒÔËõÐ¡Ñ¡Ôñ·¶Î§£©ºó°´¡°Add Filter¡±°´Å¥¡£°´¡°Cancel¡±°´Å¥É¾³ý±íµ¥»òÅÔ±ßµÄ¡°Add Filter¡±°´Å¥Íê³É¡£
+å°†é¼ æ ‡æ‚¬åœåœ¨â€œFiltersï¼ˆè¿‡æ»¤å™¨ï¼‰â€æ å¹¶ä¸”æŒ‰â€œAdd Filterâ€æŒ‰é’®å±•ç¤ºâ€œAdd Filterâ€è¡¨å•ã€‚åœ¨é€‰æ‹©æ¡†é€‰æ‹©`Zend\Filter\StringTrim`ï¼ˆæç¤ºï¼šè¾“å…¥â€œtrimâ€ä»¥ç¼©å°é€‰æ‹©èŒƒå›´ï¼‰åŽæŒ‰â€œAdd Filterâ€æŒ‰é’®ã€‚æŒ‰â€œCancelâ€æŒ‰é’®åˆ é™¤è¡¨å•æˆ–æ—è¾¹çš„â€œAdd Filterâ€æŒ‰é’®å®Œæˆã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-message-filter-trim.png)
 
-ÏÖÔÚ£¬½«Êó±êÐüÍ£ÔÚ¡°Validators£¨ÑéÖ¤Æ÷£©¡±±êÌâÀ¸£¬È»ºó°´¡°Add Validator¡±°´Å¥À´Õ¹Ê¾¡°Add Validator¡±±íµ¥¡£ÔÚÑ¡Ôñ¿òÑ¡Ôñ`Zend\Validator\StringLength`£¨ÌáÊ¾£ºÊäÈë¡°string¡±ÒÔËõÐ¡Ñ¡Ôñ·¶Î§£©ºó°´¡°Add Validator¡±°´Å¥¡£°´¡°Cancel¡±°´Å¥É¾³ý±íµ¥»òÅÔ±ßµÄ¡°Add Validator¡±°´Å¥Íê³É¡£
+çŽ°åœ¨ï¼Œå°†é¼ æ ‡æ‚¬åœåœ¨â€œValidatorsï¼ˆéªŒè¯å™¨ï¼‰â€æ ‡é¢˜æ ï¼Œç„¶åŽæŒ‰â€œAdd Validatorâ€æŒ‰é’®æ¥å±•ç¤ºâ€œAdd Validatorâ€è¡¨å•ã€‚åœ¨é€‰æ‹©æ¡†é€‰æ‹©`Zend\Validator\StringLength`ï¼ˆæç¤ºï¼šè¾“å…¥â€œstringâ€ä»¥ç¼©å°é€‰æ‹©èŒƒå›´ï¼‰åŽæŒ‰â€œAdd Validatorâ€æŒ‰é’®ã€‚æŒ‰â€œCancelâ€æŒ‰é’®åˆ é™¤è¡¨å•æˆ–æ—è¾¹çš„â€œAdd Validatorâ€æŒ‰é’®å®Œæˆã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-message-validator-length.png)
 
-½«Êó±êÐüÍ£ÔÚ`Zend\Validator\StringLength`±êÌâÀ¸Õ¹Ê¾¡°Add Option¡±°´Å¥¡£µã»÷Ëü¡£ÔÚ³öÏÖµÄÑ¡Ôñ¿òÖÐÑ¡Ôñ`max`£¨×î´óÖµ£©¡£Ñ¡ÖÐºó¾Í»á³öÏÖÐÂµÄ±íµ¥¡£ÊäÈëÖµ¡°140¡±£¬È»ºóµã»÷¡°Add Option¡±°´Å¥¡£°´¡°Cancel¡±°´Å¥É¾³ý±íµ¥»òÅÔ±ßµÄ¡°Add Option¡±°´Å¥Íê³É¡£
+å°†é¼ æ ‡æ‚¬åœåœ¨`Zend\Validator\StringLength`æ ‡é¢˜æ å±•ç¤ºâ€œAdd Optionâ€æŒ‰é’®ã€‚ç‚¹å‡»å®ƒã€‚åœ¨å‡ºçŽ°çš„é€‰æ‹©æ¡†ä¸­é€‰æ‹©`max`ï¼ˆæœ€å¤§å€¼ï¼‰ã€‚é€‰ä¸­åŽå°±ä¼šå‡ºçŽ°æ–°çš„è¡¨å•ã€‚è¾“å…¥å€¼â€œ140â€ï¼Œç„¶åŽç‚¹å‡»â€œAdd Optionâ€æŒ‰é’®ã€‚æŒ‰â€œCancelâ€æŒ‰é’®åˆ é™¤è¡¨å•æˆ–æ—è¾¹çš„â€œAdd Optionâ€æŒ‰é’®å®Œæˆã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-message-validator-max.png)
 
-Õâ¸öÊ±ºò£¬ÄãÓ¦¸ÃÔÚÄãµÄÆÁÄ»ÉÏ¿´µ½ÈçÏÂ£º
+è¿™ä¸ªæ—¶å€™ï¼Œä½ åº”è¯¥åœ¨ä½ çš„å±å¹•ä¸Šçœ‹åˆ°å¦‚ä¸‹ï¼š
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-message-complete.png)
 
-µã»÷¡°message¡±×Ö¶Î±êÌâÀ¸À´ÕÛµþËü¡£
+ç‚¹å‡»â€œmessageâ€å­—æ®µæ ‡é¢˜æ æ¥æŠ˜å å®ƒã€‚
 
-ÔÚÕâ¸öÊ±ºò£¬ÄãÓÐÒ»¸öÁ·Ï°£º
+åœ¨è¿™ä¸ªæ—¶å€™ï¼Œä½ æœ‰ä¸€ä¸ªç»ƒä¹ ï¼š
 
-* ¸üÐÂ¡°user¡±×Ö¶Î£º
-	* Ìí¼ÓÃèÊö£º¡°The user submitting the status message.¡±
-	* Ìí¼ÓÑéÖ¤Ê§°ÜÐÅÏ¢£º¡°"You must provide a valid user.¡±
-	* Ìí¼Ó`Zend\Filter\StringTrim`¹ýÂËÆ÷
-	* Ìí¼Ó`Zend\Validator\Regex`ÑéÖ¤Æ÷£¬¸øËüÒ»¸ö`pattern`Ñ¡ÏîºÍÖµ`/^(mwop|andi|zeev)$/`£¨Èç¹ûÐèÒª¿ÉÒÔËæÒâÌæ»»»òÌí¼ÓÆäËûÃû×Ö»òêÇ³Æ£©
-* ¸üÐÂ¡°timestamp¡±×Ö¶Î£º
-	* Ìí¼ÓÃèÊö£º¡°he timestamp when the status message was last modified.¡±
-	* Ìí¼ÓÑéÖ¤Ê§°ÜÐÅÏ¢£º¡°You must provide a timestamp.¡±
-	* ÇÐ»»¡°Required¡±±ê¼ÇÎª¡°No¡±
-	* Ìí¼Ó`Zend\Validator\Digits`ÑéÖ¤Æ÷
+* æ›´æ–°â€œuserâ€å­—æ®µï¼š
+	* æ·»åŠ æè¿°ï¼šâ€œThe user submitting the status message.â€
+	* æ·»åŠ éªŒè¯å¤±è´¥ä¿¡æ¯ï¼šâ€œ"You must provide a valid user.â€
+	* æ·»åŠ `Zend\Filter\StringTrim`è¿‡æ»¤å™¨
+	* æ·»åŠ `Zend\Validator\Regex`éªŒè¯å™¨ï¼Œç»™å®ƒä¸€ä¸ª`pattern`é€‰é¡¹å’Œå€¼`/^(mwop|andi|zeev)$/`ï¼ˆå¦‚æžœéœ€è¦å¯ä»¥éšæ„æ›¿æ¢æˆ–æ·»åŠ å…¶ä»–åå­—æˆ–æ˜µç§°ï¼‰
+* æ›´æ–°â€œtimestampâ€å­—æ®µï¼š
+	* æ·»åŠ æè¿°ï¼šâ€œhe timestamp when the status message was last modified.â€
+	* æ·»åŠ éªŒè¯å¤±è´¥ä¿¡æ¯ï¼šâ€œYou must provide a timestamp.â€
+	* åˆ‡æ¢â€œRequiredâ€æ ‡è®°ä¸ºâ€œNoâ€
+	* æ·»åŠ `Zend\Validator\Digits`éªŒè¯å™¨
 
-Íê³Éºó£¬ÔÚÆÁÄ»µÄÓÒÏÂ½Ç°´ÂÌÉ«µÄ¡°Save Changes¡±°´Å¥¡£Íê³ÉºóµÄ¡°user¡±ºÍ¡°timestamp¡±×Ö¶Î¿´ÆðÀ´»áÏñÒÔÏÂ½ØÍ¼£º
+å®ŒæˆåŽï¼Œåœ¨å±å¹•çš„å³ä¸‹è§’æŒ‰ç»¿è‰²çš„â€œSave Changesâ€æŒ‰é’®ã€‚å®ŒæˆåŽçš„â€œuserâ€å’Œâ€œtimestampâ€å­—æ®µçœ‹èµ·æ¥ä¼šåƒä»¥ä¸‹æˆªå›¾ï¼š
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-user-complete.png)
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-timestamp-complete.png)
 
-ÈÃÎÒÃÇ×ªÒÆµ½ÎÄµµ¡£
+è®©æˆ‘ä»¬è½¬ç§»åˆ°æ–‡æ¡£ã€‚
 
-ÎÄµµ
+æ–‡æ¡£
 ----
 
-REST·þÎñÈÃÄãµÄÎÄµµ²»½öÔÊÐíÍ¨¹ýHTTP·½·¨£¬¶øÊÇÍ¨¹ýHTTP·½·¨ÎªÃ¿¸ö¼¯ºÏºÍÊµÌå¡£
+RESTæœåŠ¡è®©ä½ çš„æ–‡æ¡£ä¸ä»…å…è®¸é€šè¿‡HTTPæ–¹æ³•ï¼Œè€Œæ˜¯é€šè¿‡HTTPæ–¹æ³•ä¸ºæ¯ä¸ªé›†åˆå’Œå®žä½“ã€‚
 
-ÓÃÓÚ¼ÇÂ¼Ò»¸öREST·þÎñµÄ¹ý³Ì¾ÍÏñÊÇÎÒÃÇÔÚ[ÈëÃÅÖ¸ÄÏ](http://vergil.cn/archives/13/)Ñ§»áµÄ£¬µ«ÓÐÁ½¸ö²»Í¬Ö®´¦£º
+ç”¨äºŽè®°å½•ä¸€ä¸ªRESTæœåŠ¡çš„è¿‡ç¨‹å°±åƒæ˜¯æˆ‘ä»¬åœ¨[å…¥é—¨æŒ‡å—](http://vergil.cn/archives/13/)å­¦ä¼šçš„ï¼Œä½†æœ‰ä¸¤ä¸ªä¸åŒä¹‹å¤„ï¼š
 
-* Äã½«ÐèÒªÎª**Ã¿¸ö**¼¯ºÏºÍÊµÌåµÄHTTP·½·¨´´½¨ÎÄµµ¡£
-* ÓÐÐ©·½·¨»¹Ô¤ÆÚ»áÇëÇóÊý¾Ý£¬ËùÒÔÄãÐèÒªÎªÇëÇóÊý¾Ý´´½¨ÎÄµµ¡£
+* ä½ å°†éœ€è¦ä¸º**æ¯ä¸ª**é›†åˆå’Œå®žä½“çš„HTTPæ–¹æ³•åˆ›å»ºæ–‡æ¡£ã€‚
+* æœ‰äº›æ–¹æ³•è¿˜é¢„æœŸä¼šè¯·æ±‚æ•°æ®ï¼Œæ‰€ä»¥ä½ éœ€è¦ä¸ºè¯·æ±‚æ•°æ®åˆ›å»ºæ–‡æ¡£ã€‚
 
-¼ÙÉèÄãÒÑ¾­¼ÇÂ¼ÁËÄãµÄ×Ö¶Î¡£¡°generate from configuration£¨Éú³ÉÅäÖÃ£©¡±°´Å¥ÊÇÉú³Éµ±Ç°ÇëÇóºÍÏìÓ¦µÄÅäÖÃÎÄ¼þ¡£Äã»á·¢ÏÖ£¬ÏàÓ¦µÄ¸ºÔØ°üÀ¨`_links`ºÍ`_embedded`³ÉÔ±£ºÕâÊÇÒòÎªÔÚApigility REST·þÎñÄ¬ÈÏÊ¹ÓÃ[³¬Ã½ÌåÓ¦ÓÃÓïÑÔ](http://stateless.co/hal_specification.html)£¨Hypermedia Application Language£¬ HAL£©¸ñÊ½£¬ËüÌá¹©ÁËÒ»ÖÖÎªÄãÁ´½Óµ½ÆäËû±©Â¶³öµÄ·þÎñ£¬ÒÔ¼°½«ËüÃÇÇ¶ÈëµÄ×ÊÔ´¡££¨ÓÐ¹ØHALµÄ¸ü¶àÐÅÏ¢£¬ÇëÔÄ¶ÁÎÒÃÇµÄ[HALÈëÃÅ](https://apigility.org/documentation/api-primer/halprimer)£©
+å‡è®¾ä½ å·²ç»è®°å½•äº†ä½ çš„å­—æ®µã€‚â€œgenerate from configurationï¼ˆç”Ÿæˆé…ç½®ï¼‰â€æŒ‰é’®æ˜¯ç”Ÿæˆå½“å‰è¯·æ±‚å’Œå“åº”çš„é…ç½®æ–‡ä»¶ã€‚ä½ ä¼šå‘çŽ°ï¼Œç›¸åº”çš„è´Ÿè½½åŒ…æ‹¬`_links`å’Œ`_embedded`æˆå‘˜ï¼šè¿™æ˜¯å› ä¸ºåœ¨Apigility RESTæœåŠ¡é»˜è®¤ä½¿ç”¨[è¶…åª’ä½“åº”ç”¨è¯­è¨€](http://stateless.co/hal_specification.html)ï¼ˆHypermedia Application Languageï¼Œ HALï¼‰æ ¼å¼ï¼Œå®ƒæä¾›äº†ä¸€ç§ä¸ºä½ é“¾æŽ¥åˆ°å…¶ä»–æš´éœ²å‡ºçš„æœåŠ¡ï¼Œä»¥åŠå°†å®ƒä»¬åµŒå…¥çš„èµ„æºã€‚ï¼ˆæœ‰å…³HALçš„æ›´å¤šä¿¡æ¯ï¼Œè¯·é˜…è¯»æˆ‘ä»¬çš„[HALå…¥é—¨](https://apigility.org/documentation/api-primer/halprimer)ï¼‰
 
-ÄãÏÖÔÚÊÇÁ·Ï°¼ÇÂ¼¼¯ºÏºÍÊµÌåµÄ²Ù×÷£º
+ä½ çŽ°åœ¨æ˜¯ç»ƒä¹ è®°å½•é›†åˆå’Œå®žä½“çš„æ“ä½œï¼š
 
-* Ìá¹©¡°´´½¨¡¢²Ù×÷£¬ºÍ»ñÈ¡×´Ì¬ÐÅÏ¢¡±·þÎñµÄÎÄµµ
-* Ìá¹©"×´Ì¬ÐÅÏ¢µÄ²Ù×÷ÁÐ±í"µÄ¼¯ºÏÎÄµµ
-	* ¶ÔÓÚ`GET`·½·¨£¬°ÑËüÃèÊöÎª¡°»ñÈ¡×´Ì¬ÐÅÏ¢µÄ·ÖÒ³ÁÐ±í¡±
-	* ¶ÔÓÚ`POST`·½·¨£¬°ÑËüÃèÊöÎª¡°´´½¨Ò»¸öÐÂµÄ×´Ì¬ÐÅÏ¢¡±
-* Ìá¹©¡°²Ù×÷ºÍ»ñÈ¡µ¥¸öÐÅÏ¢¡±µÄÊµÌåÎÄµµ
-	* ¶ÔÓÚ`GET`·½·¨£¬°ÑËüÃèÊöÎª¡°»ñÈ¡×´Ì¬ÐÅÏ¢¡±
-	* ¶ÔÓÚ`POST`·½·¨£¬°ÑËüÃèÊöÎª¡°¸üÐÂ×´Ì¬ÐÅÏ¢¡±
-	* ¶ÔÓÚ`PUT`·½·¨£¬°ÑËüÃèÊöÎª¡°Ìæ»»×´Ì¬ÐÅÏ¢¡±
-	* ¶ÔÓÚ`DELETE`·½·¨£¬°ÑËüÃèÊöÎª¡±É¾³ý×´Ì¬ÐÅÏ¢¡°
+* æä¾›â€œåˆ›å»ºã€æ“ä½œï¼Œå’ŒèŽ·å–çŠ¶æ€ä¿¡æ¯â€æœåŠ¡çš„æ–‡æ¡£
+* æä¾›"çŠ¶æ€ä¿¡æ¯çš„æ“ä½œåˆ—è¡¨"çš„é›†åˆæ–‡æ¡£
+	* å¯¹äºŽ`GET`æ–¹æ³•ï¼ŒæŠŠå®ƒæè¿°ä¸ºâ€œèŽ·å–çŠ¶æ€ä¿¡æ¯çš„åˆ†é¡µåˆ—è¡¨â€
+	* å¯¹äºŽ`POST`æ–¹æ³•ï¼ŒæŠŠå®ƒæè¿°ä¸ºâ€œåˆ›å»ºä¸€ä¸ªæ–°çš„çŠ¶æ€ä¿¡æ¯â€
+* æä¾›â€œæ“ä½œå’ŒèŽ·å–å•ä¸ªä¿¡æ¯â€çš„å®žä½“æ–‡æ¡£
+	* å¯¹äºŽ`GET`æ–¹æ³•ï¼ŒæŠŠå®ƒæè¿°ä¸ºâ€œèŽ·å–çŠ¶æ€ä¿¡æ¯â€
+	* å¯¹äºŽ`POST`æ–¹æ³•ï¼ŒæŠŠå®ƒæè¿°ä¸ºâ€œæ›´æ–°çŠ¶æ€ä¿¡æ¯â€
+	* å¯¹äºŽ`PUT`æ–¹æ³•ï¼ŒæŠŠå®ƒæè¿°ä¸ºâ€œæ›¿æ¢çŠ¶æ€ä¿¡æ¯â€
+	* å¯¹äºŽ`DELETE`æ–¹æ³•ï¼ŒæŠŠå®ƒæè¿°ä¸ºâ€åˆ é™¤çŠ¶æ€ä¿¡æ¯â€œ
 
-³ýÁË`DELETE`£¬¶ÔÓÚÃ¿¸ö²Ù×÷£¬Ê¹ÓÃ¡±generate from configuration£¨Éú³ÉÅäÖÃ£©¡°°´Å¥À´Éú³ÉÇëÇóºÍÏàÓ¦ÅäÖÃ¡£Èç¹ûÄãÔ¸Òâ£¬Äã¿ÉÒÔ±à¼­ËüÃÇ£¬µ«ÕâÑù×öµÄ»°Õâ¸ö½Ì³Ì¾ÍÃ»ÓÐ±ØÒªÁË¡£
+é™¤äº†`DELETE`ï¼Œå¯¹äºŽæ¯ä¸ªæ“ä½œï¼Œä½¿ç”¨â€generate from configurationï¼ˆç”Ÿæˆé…ç½®ï¼‰â€œæŒ‰é’®æ¥ç”Ÿæˆè¯·æ±‚å’Œç›¸åº”é…ç½®ã€‚å¦‚æžœä½ æ„¿æ„ï¼Œä½ å¯ä»¥ç¼–è¾‘å®ƒä»¬ï¼Œä½†è¿™æ ·åšçš„è¯è¿™ä¸ªæ•™ç¨‹å°±æ²¡æœ‰å¿…è¦äº†ã€‚
 
-ÉÔºóÎÒÃÇ½«¼ì²éÎÄµµ¡£ÏÖÔÚ£¬ÈÃÎÒÃÇ¼ÌÐøÀ´ÈÏÖ¤ºÍÊÚÈ¨¡£
+ç¨åŽæˆ‘ä»¬å°†æ£€æŸ¥æ–‡æ¡£ã€‚çŽ°åœ¨ï¼Œè®©æˆ‘ä»¬ç»§ç»­æ¥è®¤è¯å’ŒæŽˆæƒã€‚
 
-ÈÏÖ¤ºÍÊÚÈ¨
+è®¤è¯å’ŒæŽˆæƒ
 ---------
 
-µã»÷¡±Authorization¡°²Ëµ¥Ïî£¬µ¯³öÊÚÈ¨Ò³Ãæ¡£Äã»á¿´µ½Ò»¸ö·þÎñºÍHTTPµÄ±í¸ñ£¬ÒÔ¼°Ò»¸ö¾¯¸æ£¬±íÊ¾ÎÒÃÇ»¹Ã»ÓÐÉè¶¨ÈÏÖ¤¡£
+ç‚¹å‡»â€Authorizationâ€œèœå•é¡¹ï¼Œå¼¹å‡ºæŽˆæƒé¡µé¢ã€‚ä½ ä¼šçœ‹åˆ°ä¸€ä¸ªæœåŠ¡å’ŒHTTPçš„è¡¨æ ¼ï¼Œä»¥åŠä¸€ä¸ªè­¦å‘Šï¼Œè¡¨ç¤ºæˆ‘ä»¬è¿˜æ²¡æœ‰è®¾å®šè®¤è¯ã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-authorization.png)
 
-ÎÒÃÇÏÖÔÚÏÈºöÂÔÕâÐ©¾¯¸æ¡£±í¸ñµÄ±êÌâ±êÓÐ`POST`£¬`PATCH`£¬`PUT`ºÍ`DELETE`,±íÊ¾ËùÓÐ·þÎñ±©Â¶³öµÄÕâÐ©²Ù×÷¶¼ÐèÒªÊÚÈ¨¡£È»ºóµã»÷ÂÌÉ«µÄ¡°Save¡±°´Å¥¡£
+æˆ‘ä»¬çŽ°åœ¨å…ˆå¿½ç•¥è¿™äº›è­¦å‘Šã€‚è¡¨æ ¼çš„æ ‡é¢˜æ ‡æœ‰`POST`ï¼Œ`PATCH`ï¼Œ`PUT`å’Œ`DELETE`,è¡¨ç¤ºæ‰€æœ‰æœåŠ¡æš´éœ²å‡ºçš„è¿™äº›æ“ä½œéƒ½éœ€è¦æŽˆæƒã€‚ç„¶åŽç‚¹å‡»ç»¿è‰²çš„â€œSaveâ€æŒ‰é’®ã€‚
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-authorization-complete.png)
 
-Ñ¡ÖÐµÄ·½·¨ºÍ·þÎñ¶¼ÐèÒªÊÚÈ¨£¬ÕâÒâÎ¶×ÅËûÃÇÎÞ·¨·ÃÎÊ£¬³ý·ÇÓÃ»§ÄÜÌá¹©ÓÐÐ§µÄÆ¾¾Ý¡£Èç¹ûÄã³¢ÊÔÖ´ÐÐÎÒÃÇÕâÊ±±ê¼ÇµÄ²Ù×÷£¬Äã»á·¢ÏÖÄã²»ÄÜÖ´ÐÐ£ºÄã»áµÃµ½Ò»¸ö`403 Forbidden`µÄÏìÓ¦¡£
+é€‰ä¸­çš„æ–¹æ³•å’ŒæœåŠ¡éƒ½éœ€è¦æŽˆæƒï¼Œè¿™æ„å‘³ç€ä»–ä»¬æ— æ³•è®¿é—®ï¼Œé™¤éžç”¨æˆ·èƒ½æä¾›æœ‰æ•ˆçš„å‡­æ®ã€‚å¦‚æžœä½ å°è¯•æ‰§è¡Œæˆ‘ä»¬è¿™æ—¶æ ‡è®°çš„æ“ä½œï¼Œä½ ä¼šå‘çŽ°ä½ ä¸èƒ½æ‰§è¡Œï¼šä½ ä¼šå¾—åˆ°ä¸€ä¸ª`403 Forbidden`çš„å“åº”ã€‚
 
-ËùÒÔ£¬½ÓÏÂÀ´ÊÇ¼ÓÈëÉí·ÝÈÏÖ¤¡£¸Ã¾¯¸æ¿òÌá¹©Ò»¸öÁ´½Óµ½¡°authentication screen¡±¡£µã»÷Ëü
+æ‰€ä»¥ï¼ŒæŽ¥ä¸‹æ¥æ˜¯åŠ å…¥èº«ä»½è®¤è¯ã€‚è¯¥è­¦å‘Šæ¡†æä¾›ä¸€ä¸ªé“¾æŽ¥åˆ°â€œauthentication screenâ€ã€‚ç‚¹å‡»å®ƒ
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-authentication.png)
 
-ÔÚÕâ¸öÀý×ÓÖÐ£¬ÎÒÃÇ½«Ê¹ÓÃHTTP»ù±¾£¨HTTP Basic£©Éí·ÝÈÏÖ¤¡£Òò´Ë£¬µã»÷¡°HTTP Basic¡±°´Å¥¡£
+åœ¨è¿™ä¸ªä¾‹å­ä¸­ï¼Œæˆ‘ä»¬å°†ä½¿ç”¨HTTPåŸºæœ¬ï¼ˆHTTP Basicï¼‰èº«ä»½è®¤è¯ã€‚å› æ­¤ï¼Œç‚¹å‡»â€œHTTP Basicâ€æŒ‰é’®ã€‚
 
-ÎÒÃÇÊ¹ÓÃÏàÍ¬µÄÖµ×÷ÎªÕ¼Î»·û£ºÌîÐ´¡°Authentication Realm¡±µÄÖµÎª`api`£¬¡°Location of htpasswd file¡±µÄÖµÎª`data/htpasswd`¡£Íê³Éºó£¬µã»÷À¶É«µÄ¡°Save¡±°´Å¥¡£
+æˆ‘ä»¬ä½¿ç”¨ç›¸åŒçš„å€¼ä½œä¸ºå ä½ç¬¦ï¼šå¡«å†™â€œAuthentication Realmâ€çš„å€¼ä¸º`api`ï¼Œâ€œLocation of htpasswd fileâ€çš„å€¼ä¸º`data/htpasswd`ã€‚å®ŒæˆåŽï¼Œç‚¹å‡»è“è‰²çš„â€œSaveâ€æŒ‰é’®ã€‚
 
-ÎÒÃÇÒÑ¾­Íê³ÉÃèÊöÎÒÃÇµÄAPI...µ«ÊÇÎÒÃÇ»¹Ã»ÓÐºÍÎÒÃÇµÄ´úÂëÁªÏµÔÚÒ»ÆðÄØ£¡ÊÇÊ±ºò×öÕâÐ©ÁË¡£
+æˆ‘ä»¬å·²ç»å®Œæˆæè¿°æˆ‘ä»¬çš„API...ä½†æ˜¯æˆ‘ä»¬è¿˜æ²¡æœ‰å’Œæˆ‘ä»¬çš„ä»£ç è”ç³»åœ¨ä¸€èµ·å‘¢ï¼æ˜¯æ—¶å€™åšè¿™äº›äº†ã€‚
 
 
-¶¨Òå×ÊÔ´
+å®šä¹‰èµ„æº
 --------
 
-Äã¿ÉÒÔ»ØÒäÒ»ÏÂ£¬Ö®Ç°ApigilityÎªÎÒÃÇ´´½¨ÁË4¸öÀà£¬·Ö±ðÊÇÊµÌå£¨entity£©¡¢¼¯ºÏ£¨collection£©¡¢×ÊÔ´£¨resource£©¡¢¹¤³§£¨factory£©£¬ºÍÒ»¸ö¹¤³§³õÊ¼»¯×ÊÔ´¡£ÊÇÊ±ºò·ÅÒ»Ð©´úÂëÔÚÎÒÃÇµÄ×ÊÔ´ÀàÁË¡£
+ä½ å¯ä»¥å›žå¿†ä¸€ä¸‹ï¼Œä¹‹å‰Apigilityä¸ºæˆ‘ä»¬åˆ›å»ºäº†4ä¸ªç±»ï¼Œåˆ†åˆ«æ˜¯å®žä½“ï¼ˆentityï¼‰ã€é›†åˆï¼ˆcollectionï¼‰ã€èµ„æºï¼ˆresourceï¼‰ã€å·¥åŽ‚ï¼ˆfactoryï¼‰ï¼Œå’Œä¸€ä¸ªå·¥åŽ‚åˆå§‹åŒ–èµ„æºã€‚æ˜¯æ—¶å€™æ”¾ä¸€äº›ä»£ç åœ¨æˆ‘ä»¬çš„èµ„æºç±»äº†ã€‚
 
-ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±¾µÄAPI¡£
+Apigilityæä¾›ç‰ˆæœ¬æŽ§åˆ¶ã€‚ä»£ç çš„å‘½åç©ºé—´ä¹Ÿæ˜¯ç‰ˆæœ¬åŒ–çš„ã€‚è¿™ä¸ªåŠŸèƒ½å…è®¸ä½ å¹¶è¡Œè¿è¡Œå¤šä¸ªç‰ˆæœ¬çš„APIã€‚
 
-ÔÚ`module/Status/src/Status/V1/Rest/Status/StatusResource.php`ÕÒµ½ÎÒÃÇµÄ×ÊÔ´ÀàÎÄ¼þ²¢ÔÚ±à¼­Æ÷´ò¿ªËü¡£
+åœ¨`module/Status/src/Status/V1/Rest/Status/StatusResource.php`æ‰¾åˆ°æˆ‘ä»¬çš„èµ„æºç±»æ–‡ä»¶å¹¶åœ¨ç¼–è¾‘å™¨æ‰“å¼€å®ƒã€‚
 
-ÎÒÃÇ×ö³öµÄµÚÒ»¸ö¸Ä±äÊÇµ¼Èë`StatusLib\MapperInterface`Àà¡£ÔÚÉÏÃæµÄ`use`¶ÎÌí¼ÓÒ»ÐÐ`use StatusLib\MapperInterface;`¡£
+æˆ‘ä»¬åšå‡ºçš„ç¬¬ä¸€ä¸ªæ”¹å˜æ˜¯å¯¼å…¥`StatusLib\MapperInterface`ç±»ã€‚åœ¨ä¸Šé¢çš„`use`æ®µæ·»åŠ ä¸€è¡Œ`use StatusLib\MapperInterface;`ã€‚
 
 	use StatusLib\MapperInterface;
 	use ZF\ApiProblem\ApiProblem;
 	use ZF\Rest\AbstractResourceListener.php;
 
-ÏÂÒ»²½£¬ÎÒÃÇ¸øÀà¶¨ÒåÒ»¸ö`protected`ÊôÐÔ`$mapper`¡£
+ä¸‹ä¸€æ­¥ï¼Œæˆ‘ä»¬ç»™ç±»å®šä¹‰ä¸€ä¸ª`protected`å±žæ€§`$mapper`ã€‚
 
 	class StatusResource extends AbstractResourceListener
 	{
     	protected $mapper;
 
-´´½¨Ò»¸ö¹¹Ôìº¯Êý£¬½ÓÊÕÒ»¸ö`MapperInterface`²ÎÊý£¬²¢½«Æä·ÖÅä¸ø`$mapper`ÊôÐÔ¡£
+åˆ›å»ºä¸€ä¸ªæž„é€ å‡½æ•°ï¼ŒæŽ¥æ”¶ä¸€ä¸ª`MapperInterface`å‚æ•°ï¼Œå¹¶å°†å…¶åˆ†é…ç»™`$mapper`å±žæ€§ã€‚
 
 	protected $mapper;
     public function __construct(MapperInterface $mapper)
@@ -288,18 +288,18 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         $this->mapper = $mapper;
     }
 
-ÏÖÔÚ£¬ÎÒÃÇÓÐÁËÓ³ÉäÆ÷×é³É£¬ÈÃÎÒÃÇÀ´Ð´Ò»Ð©·½·¨¡£
+çŽ°åœ¨ï¼Œæˆ‘ä»¬æœ‰äº†æ˜ å°„å™¨ç»„æˆï¼Œè®©æˆ‘ä»¬æ¥å†™ä¸€äº›æ–¹æ³•ã€‚
 
-* Ìæ»»`create()`·½·¨µÄ·½·¨ÌåÎª`return $this->mapper->create($data);`¡£
-* Ìæ»»`delete()`·½·¨µÄ·½·¨ÌåÎª`return $this->mapper->delete($id);`¡£
-* Ìæ»»`fetch()`·½·¨µÄ·½·¨ÌåÎª`return $this->mapper->fetch($id);`¡£
-* Ìæ»»`fetchAll()`·½·¨µÄ·½·¨ÌåÎª`return $this->mapper->fetchAll();`¡£
-* Ìæ»»`patch()`·½·¨µÄ·½·¨ÌåÎª`return $this->mapper->update($id, $data);`¡£
-* Ìæ»»`update()`·½·¨µÄ·½·¨ÌåÎª`return $this->mapper->update($id, $data);`¡£
+* æ›¿æ¢`create()`æ–¹æ³•çš„æ–¹æ³•ä½“ä¸º`return $this->mapper->create($data);`ã€‚
+* æ›¿æ¢`delete()`æ–¹æ³•çš„æ–¹æ³•ä½“ä¸º`return $this->mapper->delete($id);`ã€‚
+* æ›¿æ¢`fetch()`æ–¹æ³•çš„æ–¹æ³•ä½“ä¸º`return $this->mapper->fetch($id);`ã€‚
+* æ›¿æ¢`fetchAll()`æ–¹æ³•çš„æ–¹æ³•ä½“ä¸º`return $this->mapper->fetchAll();`ã€‚
+* æ›¿æ¢`patch()`æ–¹æ³•çš„æ–¹æ³•ä½“ä¸º`return $this->mapper->update($id, $data);`ã€‚
+* æ›¿æ¢`update()`æ–¹æ³•çš„æ–¹æ³•ä½“ä¸º`return $this->mapper->update($id, $data);`ã€‚
 
-Äã»á×¢Òâµ½ÎÒÃÇ²¢Ã»ÓÐ¸üÐÂÀàÖÐµÄËùÓÐ·½·¨¡£ÓÐ¼¸ÖÖ·½·¨¿ÉÓÃÓÚ¶ÔÁÐ±íµÄ²Ù×÷£¬ÎÒÃÇ²¢²»È·¶¨ÕâÐ©²Ù×÷¡£
+ä½ ä¼šæ³¨æ„åˆ°æˆ‘ä»¬å¹¶æ²¡æœ‰æ›´æ–°ç±»ä¸­çš„æ‰€æœ‰æ–¹æ³•ã€‚æœ‰å‡ ç§æ–¹æ³•å¯ç”¨äºŽå¯¹åˆ—è¡¨çš„æ“ä½œï¼Œæˆ‘ä»¬å¹¶ä¸ç¡®å®šè¿™äº›æ“ä½œã€‚
 
-ÎÒÃÇÈçºÎ»ñÈ¡`$mapper`µ½×ÊÔ´£¿Îª´Ë£¬ÎÒÃÇ½«ÐÞ¸ÄÎÒÃÇµÄ¹¤³§¡£ÔÚ±à¼­Æ÷´ò¿ªÎÄ¼þ`module/Status/src/Status/V1/Rest/Status/StatusResourceFactory.php`²¢ÐÞ¸ÄËü£¬ËùÒÔËüµÄÄÚÈÝÈçÏÂ£¨ÄãÓ¦¸ÃÖ»ÔÚ`__invoke()`·½·¨ÀïÃæÐÞ¸Ä`return`£©£º
+æˆ‘ä»¬å¦‚ä½•èŽ·å–`$mapper`åˆ°èµ„æºï¼Ÿä¸ºæ­¤ï¼Œæˆ‘ä»¬å°†ä¿®æ”¹æˆ‘ä»¬çš„å·¥åŽ‚ã€‚åœ¨ç¼–è¾‘å™¨æ‰“å¼€æ–‡ä»¶`module/Status/src/Status/V1/Rest/Status/StatusResourceFactory.php`å¹¶ä¿®æ”¹å®ƒï¼Œæ‰€ä»¥å®ƒçš„å†…å®¹å¦‚ä¸‹ï¼ˆä½ åº”è¯¥åªåœ¨`__invoke()`æ–¹æ³•é‡Œé¢ä¿®æ”¹`return`ï¼‰ï¼š
 
 	<?php
 	namespace Status\V1\Rest\Status;
@@ -311,22 +311,22 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
     	}
 	}
 
-ÉÏÃæÊÇÒ»¸ö¹¤³§£¬Ê¹ÓÃÁË[Zend Framework 2 Service Manager]£¨http://framework.zend.com/manual/2.3/en/modules/zend.service-manager.intro.html£©¡£µ±ÄãµÄ·þÎñ±»ÇëÇóÑ¡¶¨£¬Õâ¸ö¹¤³§½«´´½¨Ò»¸öÔËÐÐµÄ`StatusResource`ÊµÀý¡£ÔÚ¸Ã·½·¨ÖÐ£¬ÎÒÃÇ°Ñ`Statuslib`Ä£¿éÖÐÒÑ¾­¶¨ÒåµÄµÄÁíÒ»¸ö·þÎñ½«Æä×¢Èëµ½ÎÒÃÇµÄ`StatusResource`¡£
+ä¸Šé¢æ˜¯ä¸€ä¸ªå·¥åŽ‚ï¼Œä½¿ç”¨äº†[Zend Framework 2 Service Manager]ï¼ˆhttp://framework.zend.com/manual/2.3/en/modules/zend.service-manager.intro.htmlï¼‰ã€‚å½“ä½ çš„æœåŠ¡è¢«è¯·æ±‚é€‰å®šï¼Œè¿™ä¸ªå·¥åŽ‚å°†åˆ›å»ºä¸€ä¸ªè¿è¡Œçš„`StatusResource`å®žä¾‹ã€‚åœ¨è¯¥æ–¹æ³•ä¸­ï¼Œæˆ‘ä»¬æŠŠ`Statuslib`æ¨¡å—ä¸­å·²ç»å®šä¹‰çš„çš„å¦ä¸€ä¸ªæœåŠ¡å°†å…¶æ³¨å…¥åˆ°æˆ‘ä»¬çš„`StatusResource`ã€‚
 
-ÔÚÕâµãÉÏ£¬ÎÒÃÇÖÕÓÚÓÐÒ»¸ö¿É¹¤×÷µÄREST·þÎñ£¡
+åœ¨è¿™ç‚¹ä¸Šï¼Œæˆ‘ä»¬ç»ˆäºŽæœ‰ä¸€ä¸ªå¯å·¥ä½œçš„RESTæœåŠ¡ï¼
 
-ÈÃÎÒÃÇÖ´ÐÐÒ»Ð©²âÊÔÀ´¿´¿´ËüÊÇÈçºÎ¹¤×÷µÄ¡£
+è®©æˆ‘ä»¬æ‰§è¡Œä¸€äº›æµ‹è¯•æ¥çœ‹çœ‹å®ƒæ˜¯å¦‚ä½•å·¥ä½œçš„ã€‚
 
 
-²âÊÔ
+æµ‹è¯•
 ----
 
-µÚÒ»¸ö²âÊÔÎÒÃÇ½«`GET`ÇëÇóµ½¼¯ºÏ
+ç¬¬ä¸€ä¸ªæµ‹è¯•æˆ‘ä»¬å°†`GET`è¯·æ±‚åˆ°é›†åˆ
 
 	GET /status HTTP/1.1
 	Accept: application/json
 
-ÎÒÃÇ»¹Ã»ÓÐÌí¼ÓÈÎºÎ×´Ì¬ÏûÏ¢£¬ËùÒÔÎÒÃÇµÃµ½ÁËÒ»¸ö¿Õ¼¯ºÏµÄÏìÓ¦¡£
+æˆ‘ä»¬è¿˜æ²¡æœ‰æ·»åŠ ä»»ä½•çŠ¶æ€æ¶ˆæ¯ï¼Œæ‰€ä»¥æˆ‘ä»¬å¾—åˆ°äº†ä¸€ä¸ªç©ºé›†åˆçš„å“åº”ã€‚
 
 	HTTP/1.1 200 OK
 	Content-Type: application/hal+json
@@ -344,7 +344,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
     	"total_items": 0
 	}
 
-ÈÃÎÒÃÇ³¢ÊÔÌí¼ÓÒ»Ð©Ïî£º
+è®©æˆ‘ä»¬å°è¯•æ·»åŠ ä¸€äº›é¡¹ï¼š
 
 	POST /status HTTP/1.1
 	Accept: application/json
@@ -354,7 +354,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
     	"user": "mwop"
 	}
 
-»¹¼ÇµÃÎÒÃÇÊÇÈçºÎÅäÖÃÈÏÖ¤ºÍÊÚÈ¨Âð£¿ºÃÁË£¬ÏÖÔÚ¿ÉÒÔ¿´µ½ËüµÄ¹¤×÷£¡
+è¿˜è®°å¾—æˆ‘ä»¬æ˜¯å¦‚ä½•é…ç½®è®¤è¯å’ŒæŽˆæƒå—ï¼Ÿå¥½äº†ï¼ŒçŽ°åœ¨å¯ä»¥çœ‹åˆ°å®ƒçš„å·¥ä½œï¼
 
 	HTTP/1.1 403 Forbidden
 	Content-Type: application/problem+json
@@ -365,7 +365,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
     	"type": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"
 	}
 
-ÈÃÎÒÃÇÌá¹©Æ¾Ö¤¡£Èç¹ûÄãÊ¹ÓÃµÄHTTP¿Í»§¶Ë£¬ÈçcURL»òHTTPie£¬»òREST¿Í»§¶Ë»òPostman£¬ÕâÒ»°ã»áÔÊÐíÄãÖ´ÐÐÄãµÄÆ¾¾Ý£¬È»ºó°ÑËüÃÇ±ä³ÉÒ»¸ö`Authorization`Í·¡£Äã»á¿´µ½ÏÂÃæÊÇÒ»¸öÈçÏÂÃæµÄ`Basic` token¡£
+è®©æˆ‘ä»¬æä¾›å‡­è¯ã€‚å¦‚æžœä½ ä½¿ç”¨çš„HTTPå®¢æˆ·ç«¯ï¼Œå¦‚cURLæˆ–HTTPieï¼Œæˆ–RESTå®¢æˆ·ç«¯æˆ–Postmanï¼Œè¿™ä¸€èˆ¬ä¼šå…è®¸ä½ æ‰§è¡Œä½ çš„å‡­æ®ï¼Œç„¶åŽæŠŠå®ƒä»¬å˜æˆä¸€ä¸ª`Authorization`å¤´ã€‚ä½ ä¼šçœ‹åˆ°ä¸‹é¢æ˜¯ä¸€ä¸ªå¦‚ä¸‹é¢çš„`Basic` tokenã€‚
 
     POST /status HTTP/1.1
     Accept: application/json
@@ -376,7 +376,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         "user": "mwop"
     }
 
-ÖÕÓÚ³É¹¦ÁË£¡
+ç»ˆäºŽæˆåŠŸäº†ï¼
 
     HTTP/1.1 201 Created
     Content-Type: application/hal+json
@@ -392,9 +392,9 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         "user": "mwop"
     }
 
-> ×¢Òâ£ºÃ¿¸öÊµÌåµÄ±êÊ¶·ûÊÇÎ¨Ò»µÄ£¬µ±Äã´´½¨Ò»¸ö¶öÐÂµÄ×´Ì¬ÐÅÏ¢½«»áÓÐ²»Í¬µÄ±êÊ¶·û¡£
+> æ³¨æ„ï¼šæ¯ä¸ªå®žä½“çš„æ ‡è¯†ç¬¦æ˜¯å”¯ä¸€çš„ï¼Œå½“ä½ åˆ›å»ºä¸€ä¸ªé¥¿æ–°çš„çŠ¶æ€ä¿¡æ¯å°†ä¼šæœ‰ä¸åŒçš„æ ‡è¯†ç¬¦ã€‚
 
-ÈÃÎÒÃÇÕÒ»ØstatusÏûÏ¢£»ÎÒÃÇ¿ÉÒÔÊ¹ÓÃURIÔÚ`self`¹ØÏµÁ´½ÓÀïÕÒµ½Ëü£º
+è®©æˆ‘ä»¬æ‰¾å›žstatusæ¶ˆæ¯ï¼›æˆ‘ä»¬å¯ä»¥ä½¿ç”¨URIåœ¨`self`å…³ç³»é“¾æŽ¥é‡Œæ‰¾åˆ°å®ƒï¼š
 
 	GET /status/3c10c391-f56c-4d04-a889-bd1bd8f746f0 HTTP/1.1
 	Accept: application/json
@@ -413,7 +413,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         "user": "mwop"
     }
 
-Èç¹û»Øµ½ÎÒÃÇµÄ¼¯ºÏURL£¬»áÓÐÊ²Ã´ÄØ
+å¦‚æžœå›žåˆ°æˆ‘ä»¬çš„é›†åˆURLï¼Œä¼šæœ‰ä»€ä¹ˆå‘¢
 
 	GET /status HTTP/1.1
 	Accept: application/json
@@ -452,14 +452,14 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         "total_items": 1
     }
 
-ÈÃÎÒÃÇÀ´¸üÐÂstatus;·¢ËÍPATCHÇëÇó¸ü¸ÄÏûÏ¢£º
+è®©æˆ‘ä»¬æ¥æ›´æ–°status;å‘é€PATCHè¯·æ±‚æ›´æ”¹æ¶ˆæ¯ï¼š
 
 	PATCH /status/3c10c391-f56c-4d04-a889-bd1bd8f746f0 HTTP/1.1
 	Accept: application/json
 	Content-Type: application/json
 	{"message": "[Updated] First Post!"}
 
-°¥Ñ½!ÕâÖÖ·½·¨ÐèÒªÈÏÖ¤!
+å“Žå‘€!è¿™ç§æ–¹æ³•éœ€è¦è®¤è¯!
 
     HTTP/1.1 403 Forbidden
     Content-Type: application/problem+json
@@ -470,7 +470,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         "type": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"
     }
 
-·¢ËÍÄãµÄÆ¾¾Ý£º
+å‘é€ä½ çš„å‡­æ®ï¼š
 
     PATCH /status/3c10c391-f56c-4d04-a889-bd1bd8f746f0 HTTP/1.1
     Accept: application/json
@@ -478,7 +478,7 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
     Content-Type: application/json
     {"message": "[Updated] First Post!"}
 
-³É¹¦£¡
+æˆåŠŸï¼
 
 
     HTTP/1.1 200 OK
@@ -495,45 +495,45 @@ ApigilityÌá¹©°æ±¾¿ØÖÆ¡£´úÂëµÄÃüÃû¿Õ¼äÒ²ÊÇ°æ±¾»¯µÄ¡£Õâ¸ö¹¦ÄÜÔÊÐíÄã²¢ÐÐÔËÐÐ¶à¸ö°æ±
         "user": "mwop"
     }
 
-`PUT`²Ù×÷ÀàËÆÓÚ`PATCH`£¬Í¨³£ËüÊÇÓÃÀ´Ìá¹©Ò»¸öÍêÕûµÄ`Ìæ»»`µÄÊµÌå¡£ÏÖÔÚÎÒÃÇ²»»áÕ¹Ê¾Ëü¡£
+`PUT`æ“ä½œç±»ä¼¼äºŽ`PATCH`ï¼Œé€šå¸¸å®ƒæ˜¯ç”¨æ¥æä¾›ä¸€ä¸ªå®Œæ•´çš„`æ›¿æ¢`çš„å®žä½“ã€‚çŽ°åœ¨æˆ‘ä»¬ä¸ä¼šå±•ç¤ºå®ƒã€‚
 
-ÈÃÎÒÃÇ³¢ÊÔÒ»ÏÂ`DELETE`ÇëÇó¡£»ØÏëÒ»ÏÂ£¬ËüÊÇÐèÒªÊÚÈ¨µÄ¡£ËùÒÔÎÒÃÇµÚÒ»Ê±¼äÌá¹©Æ¾¾Ý¡£
+è®©æˆ‘ä»¬å°è¯•ä¸€ä¸‹`DELETE`è¯·æ±‚ã€‚å›žæƒ³ä¸€ä¸‹ï¼Œå®ƒæ˜¯éœ€è¦æŽˆæƒçš„ã€‚æ‰€ä»¥æˆ‘ä»¬ç¬¬ä¸€æ—¶é—´æä¾›å‡­æ®ã€‚
 
     DELETE /status/3c10c391-f56c-4d04-a889-bd1bd8f746f0 HTTP/1.1
     Accept: application/json
     Authorization: Basic bXdvcDptd29w
 
-Õâ½«µ¼ÖÂ£º
+è¿™å°†å¯¼è‡´ï¼š
 
 	HTTP/1.1 204 No Content
 
-ÈÃÎÒÃÇ¿´Ò»ÏÂÎÄµµ¡£
+è®©æˆ‘ä»¬çœ‹ä¸€ä¸‹æ–‡æ¡£ã€‚
 
 
-ÎÄµµ
+æ–‡æ¡£
 ----
 
-ÔÚÇ°Ò»ÕÂºÍÕâÀï£¬ÎÒÃÇ´´½¨ÁËÎÄµµ¡£Èç¹ûÄãÔÚAdmin UIÀï¿´¹ý£¬Äã¿ÉÄÜ»á¿´µ½Ç¶ÈëÔÚÃ¿¸ö·þÎñµÄÎÄµµ¡£È»¶ø£¬Äã»¹¿ÉÒÔ¿´ÎÄµµ±¾Éí¡£
+åœ¨å‰ä¸€ç« å’Œè¿™é‡Œï¼Œæˆ‘ä»¬åˆ›å»ºäº†æ–‡æ¡£ã€‚å¦‚æžœä½ åœ¨Admin UIé‡Œçœ‹è¿‡ï¼Œä½ å¯èƒ½ä¼šçœ‹åˆ°åµŒå…¥åœ¨æ¯ä¸ªæœåŠ¡çš„æ–‡æ¡£ã€‚ç„¶è€Œï¼Œä½ è¿˜å¯ä»¥çœ‹æ–‡æ¡£æœ¬èº«ã€‚
 
-ÔÚ¶¥²¿µ¼º½ÊÇÒ»ÏîÃûÎª¡°API Docs¡±µã»÷Ëü¡£
+åœ¨é¡¶éƒ¨å¯¼èˆªæ˜¯ä¸€é¡¹åä¸ºâ€œAPI Docsâ€ç‚¹å‡»å®ƒã€‚
 
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-api-docs.png)
 
-ÕýÈçAPIµÄÎÄµµ°æ±¾£¬²¢ÇÒ¿ÉÒÔÎªÃ¿¸ö°æ±¾·Ö±ð²é¿´ÎÄµµ¡£µã»÷¡°v1¡±Á´½Ó¡£
+æ­£å¦‚APIçš„æ–‡æ¡£ç‰ˆæœ¬ï¼Œå¹¶ä¸”å¯ä»¥ä¸ºæ¯ä¸ªç‰ˆæœ¬åˆ†åˆ«æŸ¥çœ‹æ–‡æ¡£ã€‚ç‚¹å‡»â€œv1â€é“¾æŽ¥ã€‚
 
 ![](https://apigility.org/apigility-documentation/img/intro-first-rest-service-api-docs-api.png)
 
-Äã¿ÉÒÔÕ¹¿ªÃ¿¸ö·þÎñ²Ù×÷¡£Õ¹¿ªÒ»¸ö²Ù×÷ÏÔÊ¾ÄúµÄÇëÇóºÍÏìÓ¦µÄÏ¸½Ú²Ù×÷£¬°üÀ¨ÔÊÐí`Accept`ºÍ`Content-Type`ÇëÇóÍ·£¬Ô¤ÆÚ`Content-Type`ÏìÓ¦£¬Ô¤ÆÚÏìÓ¦×´Ì¬Âë£¬µÈµÈ¡£
+ä½ å¯ä»¥å±•å¼€æ¯ä¸ªæœåŠ¡æ“ä½œã€‚å±•å¼€ä¸€ä¸ªæ“ä½œæ˜¾ç¤ºæ‚¨çš„è¯·æ±‚å’Œå“åº”çš„ç»†èŠ‚æ“ä½œï¼ŒåŒ…æ‹¬å…è®¸`Accept`å’Œ`Content-Type`è¯·æ±‚å¤´ï¼Œé¢„æœŸ`Content-Type`å“åº”ï¼Œé¢„æœŸå“åº”çŠ¶æ€ç ï¼Œç­‰ç­‰ã€‚
 
 
-¸ÅÒª
+æ¦‚è¦
 ----
 
-ÔÚÕâÒ»ÕÂ,ÎÒÃÇÌÖÂÛÁË:
+åœ¨è¿™ä¸€ç« ,æˆ‘ä»¬è®¨è®ºäº†:
 
-* ´´½¨Ò»¸öREST·þÎñ¡£
-* ¸ø·þÎñ×Ö¶Î´´½¨¹ýÂËÆ÷ºÍÑéÖ¤Æ÷,ÆäÖÐ°üÀ¨ÎªËûÃÇÌá¹©ÅäÖÃ¡£
-* ¸øÄãµÄ·þÎñÐ´ÎÄµµ
-* ÎªÄãµÄ·þÎñÌá¹©Éí·ÝÑéÖ¤ºÍÊÚÈ¨¡£
+* åˆ›å»ºä¸€ä¸ªRESTæœåŠ¡ã€‚
+* ç»™æœåŠ¡å­—æ®µåˆ›å»ºè¿‡æ»¤å™¨å’ŒéªŒè¯å™¨,å…¶ä¸­åŒ…æ‹¬ä¸ºä»–ä»¬æä¾›é…ç½®ã€‚
+* ç»™ä½ çš„æœåŠ¡å†™æ–‡æ¡£
+* ä¸ºä½ çš„æœåŠ¡æä¾›èº«ä»½éªŒè¯å’ŒæŽˆæƒã€‚
 
-ApigilityÊÇÒ»¸öÇ¿´óºÍÁé»îµÄ¹¤¾ß£¬ÎªÄã¶¨ÒåAPI£¬ÒÔ¼°±©Â¶ËüÃÇ£¬²¢Ìá¹©Ò»¸ö¹¤×÷Á÷´Ó´´½¨µ½Ìá¹©ÎÄµµ¡£ÄãÒÑ¾­½Ó´¥µ½±íÃæ£¬ÏÖÔÚÊÇÊ±ºòÈ¥Ì½Ë÷Ëü¿ÉÒÔÎªÄãÔõÃ´¹¹½¨£¡
+Apigilityæ˜¯ä¸€ä¸ªå¼ºå¤§å’Œçµæ´»çš„å·¥å…·ï¼Œä¸ºä½ å®šä¹‰APIï¼Œä»¥åŠæš´éœ²å®ƒä»¬ï¼Œå¹¶æä¾›ä¸€ä¸ªå·¥ä½œæµä»Žåˆ›å»ºåˆ°æä¾›æ–‡æ¡£ã€‚ä½ å·²ç»æŽ¥è§¦åˆ°è¡¨é¢ï¼ŒçŽ°åœ¨æ˜¯æ—¶å€™åŽ»æŽ¢ç´¢å®ƒå¯ä»¥ä¸ºä½ æ€Žä¹ˆæž„å»ºï¼

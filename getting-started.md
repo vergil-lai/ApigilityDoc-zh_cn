@@ -1,8 +1,10 @@
-# 入门指南
+入门指南
+========
 
 现在，你已经安装了Apigility了，是时候来参观一下它。
 
-## 假设
+假设
+----
 
 本章节假设你按照[安装向导](http://vergil.cn/archives/3/)运行，可在URL `http://localhost:8888/` 访问到应用的根目录。
 
@@ -10,14 +12,17 @@
 > Apigility Admin UI将会写入到应用的文件系统，特别是在module/和config/目录。因此，运行Web服务器的用户必须有权限写入到这些目录和这些目录的文件中。Apigility包含一些逻辑来检测权限设置是否正确，如果它检测到权限不正确会抛出一个警告对话框。如果你看到这样一个对话框，使用操作系统工具来设置相应的文件系统权限。
 当部署一个基于Apigility应用时，你不需要这些目录的写入权限。你只需要在开发过程中的写入权限。
 
-### 第一步
+第一步
+------
 访问`http://locahost:8888/`，你将被重定向到`http://localhost:8888/apigility/welcome`，它看起来像这样：
 ![](https://apigility.org/apigility-documentation/img/intro-getting-started-welcome.png)
 
 单击导航栏的“Admin”或“Get Started”按钮会跳转到Apigility管理界面：
 ![](https://apigility.org/apigility-documentation/img/intro-getting-started-settings.png)
 
-## 创建一个API
+创建一个API
+-----------
+
 现在是时候来创建你的第一个API。点击导航栏上的“APIs”进入“APIs”页面：
 ![](https://apigility.org/apigility-documentation/img/intro-getting-started-apis.png)
 
@@ -71,7 +76,9 @@
 
 在这段代码，我们要说的是，响应应包含当前时间戳的`ack`属性。
 
-## 测试我们的RPC服务
+测试我们的RPC服务
+-----------------
+
 现在是时候来测试RPC服务。你可以用能够通过HTTP通信的任何工具做到这一点。我们收藏的一些包括：
 
 * [Postman](http://www.getpostman.com/) 可用于Chrome浏览器
