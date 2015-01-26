@@ -1,18 +1,20 @@
 # Apigility中文文档翻译计划： #
 
 官方网站：<https://apigility.org>
+
 官方文档：<https://apigility.org/documentation>
 
 由于本人翻译水平较差，文档上多有不正确和错误指出，望可以指出改正！十分感谢！
+
 如果有兴趣参与这个翻译计划，请与我联系：<vergil@vip.163.com> QQ:191846903
 
 ## 进度
 
 ### INTRODUCTION
 
-* [Installation](https://apigility.org/documentation/intro/installation) 完成
-* [Getting Started](https://apigility.org/documentation/intro/getting-started) 完成
-* [REST Service Tutorial](https://apigility.org/documentation/intro/first-rest-service) 进行中
+* [Installation](https://apigility.org/documentation/intro/installation) [完成](https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/installation.md)
+* [Getting Started](https://apigility.org/documentation/intro/getting-started) [完成](https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/getting-started.md)
+* [REST Service Tutorial](https://apigility.org/documentation/intro/first-rest-service) [完成](https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/first-rest-service.md)
 
 ### API PRIMER
 
