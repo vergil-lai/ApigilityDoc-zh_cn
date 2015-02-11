@@ -18,9 +18,9 @@
 
 ### API PRIMER
 
-* [What is an API?](https://apigility.org/documentation/api-primer/what-is-an-api)
+* [What is an API?](https://apigility.org/documentation/api-primer/what-is-an-api) [进行中]
 * [Representation Formats](https://apigility.org/documentation/api-primer/representation-formats)
-* [Hypermedia Application Layer](https://apigility.org/documentation/api-primer/halprimer)
+* [Hypermedia Application Layer](https://apigility.org/documentation/api-primer/halprimer) [进行中]
 * [Error Reporting](https://apigility.org/documentation/api-primer/error-reporting)
 * [HTTP Method Negotiation](https://apigility.org/documentation/api-primer/http-negotiation)
 * [Content Negotiation](https://apigility.org/documentation/api-primer/content-negotiation)
