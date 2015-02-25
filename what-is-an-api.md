@@ -1,24 +1,24 @@
-Ê²Ã´ÊÇAPI£¿
+ä»€ä¹ˆæ˜¯APIï¼Ÿ
 ==========
 
-APIµÄÈ«³ÆÊÇ¡°Application Programming Interface£¨Ó¦ÓÃ³ÌÐò±à³Ì½Ó¿Ú£©¡±£¬²¢×÷ÎªÒ»¸öÊõÓï£¬Ö¸¶¨ÁËÈí¼þÈçºÎ½»»¥¡£
+APIçš„å…¨ç§°æ˜¯â€œApplication Programming Interfaceï¼ˆåº”ç”¨ç¨‹åºç¼–ç¨‹æŽ¥å£ï¼‰â€ï¼Œå¹¶ä½œä¸ºä¸€ä¸ªæœ¯è¯­ï¼ŒæŒ‡å®šäº†è½¯ä»¶å¦‚ä½•äº¤äº’ã€‚
 
-Ò»°ãÀ´Ëµ£¬µ±ÎÒÃÇ½ñÌìÌáµ½APIÊ±¸üÈ·ÇÐµÄËµÊÇ**Web APIs**¡£ÄÇÐ©Í¨¹ý³¬ÎÄ±¾´«ÊäÐ­Òé´«ËÍÊý¾Ý£¨HTTP£©¡£¶ÔÓÚÕâ¸öÌØ¶¨µÄÇé¿öÏÂ£¬ÄÇÃ´£¬Ò»¸öAPIÖ¸¶¨Ò»¸öÓÃ»§¿ÉÒÔÈçºÎÊ¹ÓÃÒ»¸öAPI¹«¿ªµÄ·þÎñ£ºÊ²Ã´URI¿ÉÒÔÊ¹ÓÃ£¬Ã¿¸öURI¿ÉÒÔÊ¹ÓÃÊ²Ã´HTTP·½·¨£¬Ëü½ÓÊÜÊ²Ã´²éÑ¯×Ö·û´®²ÎÊý£¬Ê²Ã´Êý¾Ý¿ÉÒÔ·¢ËÍµ½ÇëÇóÖ÷Ìå£¬ºÍÓÃ»§¿ÉÒÔµÃµ½Ê²Ã´Ô¤ÆÚµÄÏìÓ¦¡£
+ä¸€èˆ¬æ¥è¯´ï¼Œå½“æˆ‘ä»¬ä»Šå¤©æåˆ°APIæ—¶æ›´ç¡®åˆ‡çš„è¯´æ˜¯**Web APIs**ã€‚é‚£äº›é€šè¿‡è¶…æ–‡æœ¬ä¼ è¾“åè®®ä¼ é€æ•°æ®ï¼ˆHTTPï¼‰ã€‚å¯¹äºŽè¿™ä¸ªç‰¹å®šçš„æƒ…å†µä¸‹ï¼Œé‚£ä¹ˆï¼Œä¸€ä¸ªAPIæŒ‡å®šä¸€ä¸ªç”¨æˆ·å¯ä»¥å¦‚ä½•ä½¿ç”¨ä¸€ä¸ªAPIå…¬å¼€çš„æœåŠ¡ï¼šä»€ä¹ˆURIå¯ä»¥ä½¿ç”¨ï¼Œæ¯ä¸ªURIå¯ä»¥ä½¿ç”¨ä»€ä¹ˆHTTPæ–¹æ³•ï¼Œå®ƒæŽ¥å—ä»€ä¹ˆæŸ¥è¯¢å­—ç¬¦ä¸²å‚æ•°ï¼Œä»€ä¹ˆæ•°æ®å¯ä»¥å‘é€åˆ°è¯·æ±‚ä¸»ä½“ï¼Œå’Œç”¨æˆ·å¯ä»¥å¾—åˆ°ä»€ä¹ˆé¢„æœŸçš„å“åº”ã€‚
 
-APIµÄÀàÐÍ
+APIçš„ç±»åž‹
 ---------
 
-Web api¿ÉÒÔ·ÖÎªÁ½´óÀà:
+Web apiå¯ä»¥åˆ†ä¸ºä¸¤å¤§ç±»:
 
-* **Ô¶³Ì¹ý³Ìµ÷ÓÃ (Remote Procedure Call, RPC)**
-* **±íÊöÐÔ×´Ì¬´«µÝ (REpresentational State Transfer, REST)**
+* **è¿œç¨‹è¿‡ç¨‹è°ƒç”¨ (Remote Procedure Call, RPC)**
+* **è¡¨è¿°æ€§çŠ¶æ€ä¼ é€’ (REpresentational State Transfer, REST)**
 
 RPC
 ---
 
-RPCÍ¨³£µÄÌØµãÊÇµ¥¸öURIÔÚÆäÉÏµÄÐí¶à²Ù×÷¿ÉÒÔ±»µ÷ÓÃ,Í¨³£Ö»Í¨¹ý`POST`¡£ÀýÈç[XML-RPC](http://www.xmlrpc.com/) ºÍ [SOAP](http://www.w3.org/TR/soap/)¡£Í¨³£Çé¿öÏÂ£¬Äã»á´«µÝÒ»¸ö½á¹¹»¯µÄÇëÇó£¬°üÀ¨Òªµ÷ÓÃµÄ²Ù×÷Ãû³ÆºÍÄãÏëÒª´«µÝ¸ø²Ù×÷µÄ²ÎÊý£»Ëü½«ÏìÓ¦Ò»¸ö½á¹¹»¯µÄ¸ñÊ½¡£
+RPCé€šå¸¸çš„ç‰¹ç‚¹æ˜¯å•ä¸ªURIåœ¨å…¶ä¸Šçš„è®¸å¤šæ“ä½œå¯ä»¥è¢«è°ƒç”¨,é€šå¸¸åªé€šè¿‡`POST`ã€‚ä¾‹å¦‚[XML-RPC](http://www.xmlrpc.com/) å’Œ [SOAP](http://www.w3.org/TR/soap/)ã€‚é€šå¸¸æƒ…å†µä¸‹ï¼Œä½ ä¼šä¼ é€’ä¸€ä¸ªç»“æž„åŒ–çš„è¯·æ±‚ï¼ŒåŒ…æ‹¬è¦è°ƒç”¨çš„æ“ä½œåç§°å’Œä½ æƒ³è¦ä¼ é€’ç»™æ“ä½œçš„å‚æ•°ï¼›å®ƒå°†å“åº”ä¸€ä¸ªç»“æž„åŒ–çš„æ ¼å¼ã€‚
 
-Ò»¸öÀý×Ó£º
+ä¸€ä¸ªä¾‹å­ï¼š
 
     POST /xml-rpc HTTP/1.1
     Content-Type: text/xml
@@ -38,7 +38,7 @@ RPCÍ¨³£µÄÌØµãÊÇµ¥¸öURIÔÚÆäÉÏµÄÐí¶à²Ù×÷¿ÉÒÔ±»µ÷ÓÃ,Í¨³£Ö»Í¨¹ý`POST`¡£ÀýÈç[XML-RPC]
         </params>
     </methodCall>
 
-ÉÏÃæ`POST`µ½Ò»¸öÒÑÖªµÄURI£º`/xml-rpc`¡£ÇëÇóÔØÌå°üº¬Òªµ÷ÓÃµÄ²Ù×÷£º`status.create`£¬ºÍ²ÎÊý´«µÝ¸øËü¡£ÕâÐ©²ÎÊý½«»á°´ÕÕËù¶¨ÒåµÄË³Ðò±»´«µÝ¡£ÔÚÕâÖÖÇé¿öÏÂ£¬´¦Àí³ÌÐò¸ø¶¨µÄ²Ù×÷ÔÚPHP¿ÉÄÜÏñÊÇÕâÑù£º
+ä¸Šé¢`POST`åˆ°ä¸€ä¸ªå·²çŸ¥çš„URIï¼š`/xml-rpc`ã€‚è¯·æ±‚è½½ä½“åŒ…å«è¦è°ƒç”¨çš„æ“ä½œï¼š`status.create`ï¼Œå’Œå‚æ•°ä¼ é€’ç»™å®ƒã€‚è¿™äº›å‚æ•°å°†ä¼šæŒ‰ç…§æ‰€å®šä¹‰çš„é¡ºåºè¢«ä¼ é€’ã€‚åœ¨è¿™ç§æƒ…å†µä¸‹ï¼Œå¤„ç†ç¨‹åºç»™å®šçš„æ“ä½œåœ¨PHPå¯èƒ½åƒæ˜¯è¿™æ ·ï¼š
 
     class Status
     {
@@ -49,9 +49,9 @@ RPCÍ¨³£µÄÌØµãÊÇµ¥¸öURIÔÚÆäÉÏµÄÐí¶à²Ù×÷¿ÉÒÔ±»µ÷ÓÃ,Í¨³£Ö»Í¨¹ý`POST`¡£ÀýÈç[XML-RPC]
     }
 
 
-RPCÍ¨³£ÊÇ·Ç³£³ÌÐòÐÔµÄ;Í¨³£ÄÜºÜºÃµØÓ³Éäµ½º¯Êý¶¨ÒåµÄ²Ù×÷¡£
+RPCé€šå¸¸æ˜¯éžå¸¸ç¨‹åºæ€§çš„;é€šå¸¸èƒ½å¾ˆå¥½åœ°æ˜ å°„åˆ°å‡½æ•°å®šä¹‰çš„æ“ä½œã€‚
 
-ÉÏÃæµÄ¿ÉÄÜÏìÓ¦ÈçÏÂ£º
+ä¸Šé¢çš„å¯èƒ½å“åº”å¦‚ä¸‹ï¼š
 
     HTTP/1.1 200 OK
     Content-Type: text/xml
@@ -76,7 +76,7 @@ RPCÍ¨³£ÊÇ·Ç³£³ÌÐòÐÔµÄ;Í¨³£ÄÜºÜºÃµØÓ³Éäµ½º¯Êý¶¨ÒåµÄ²Ù×÷¡£
     </methodResponse>
 
 
-ÎÒÃÇ´ÓÏìÓ¦ÖÐ½ÓÊÕÒ»¸öÖµ¡£ÔÚÕâÖÖÌØÊâÇé¿öÏÂ£¬ÎÒÃÇÔÚ·µ»ØÖµ½ÓÊÕµ½½á¹¹£¬Õâ´ó¸ÅÏàµ±ÓÚÒ»¸öÄäÃû¶ÔÏó»òÕß¹ØÁªÊý×é¡£ÔÚPHPÖÐ£¬¸ÃÖµ¿ÉÄÜÊÇÕâÑùµÄ£º
+æˆ‘ä»¬ä»Žå“åº”ä¸­æŽ¥æ”¶ä¸€ä¸ªå€¼ã€‚åœ¨è¿™ç§ç‰¹æ®Šæƒ…å†µä¸‹ï¼Œæˆ‘ä»¬åœ¨è¿”å›žå€¼æŽ¥æ”¶åˆ°ç»“æž„ï¼Œè¿™å¤§æ¦‚ç›¸å½“äºŽä¸€ä¸ªåŒ¿åå¯¹è±¡æˆ–è€…å…³è”æ•°ç»„ã€‚åœ¨PHPä¸­ï¼Œè¯¥å€¼å¯èƒ½æ˜¯è¿™æ ·çš„ï¼š
 
     array(
         'status' => 'First post!',
@@ -84,7 +84,7 @@ RPCÍ¨³£ÊÇ·Ç³£³ÌÐòÐÔµÄ;Í¨³£ÄÜºÜºÃµØÓ³Éäµ½º¯Êý¶¨ÒåµÄ²Ù×÷¡£
         'timestamp' => '20140328T15:22:21',
     )
 
-µ±´íÎó·¢ÉúÊ±,´ó¶àÊýRPC¸ñÊ½ÓÐÒ»ÖÖ±ê×¼µÄ·½Ê½±¨¸æ¡£ÔÚXML-RPC£¬ÕâÊÇÒ»¸ö¡°´íÎó¡±µÄ»ØÓ¦£¬¶øSOAPÓÐÒ»¸öSOAP´íÎó¡£ÒÔXML-RPC×÷ÎªÀý×Ó£¬±È·½Ëµ£¬ÎÒÃÇÖ»´«µÝÁËÒ»¸öµ¥Ò»µÄÖµµ½·þÎñÉÏÃæ£¬ÄÇÃ´ÎÒÃÇ¿ÉÄÜ»áµÃµ½ÈçÏÂËùÊ¾µÄ´íÎóÏìÓ¦£º
+å½“é”™è¯¯å‘ç”Ÿæ—¶,å¤§å¤šæ•°RPCæ ¼å¼æœ‰ä¸€ç§æ ‡å‡†çš„æ–¹å¼æŠ¥å‘Šã€‚åœ¨XML-RPCï¼Œè¿™æ˜¯ä¸€ä¸ªâ€œé”™è¯¯â€çš„å›žåº”ï¼Œè€ŒSOAPæœ‰ä¸€ä¸ªSOAPé”™è¯¯ã€‚ä»¥XML-RPCä½œä¸ºä¾‹å­ï¼Œæ¯”æ–¹è¯´ï¼Œæˆ‘ä»¬åªä¼ é€’äº†ä¸€ä¸ªå•ä¸€çš„å€¼åˆ°æœåŠ¡ä¸Šé¢ï¼Œé‚£ä¹ˆæˆ‘ä»¬å¯èƒ½ä¼šå¾—åˆ°å¦‚ä¸‹æ‰€ç¤ºçš„é”™è¯¯å“åº”ï¼š
 
     HTTP/1.1 200 OK
     Content-Type: text/xml
@@ -108,37 +108,37 @@ RPCÍ¨³£ÊÇ·Ç³£³ÌÐòÐÔµÄ;Í¨³£ÄÜºÜºÃµØÓ³Éäµ½º¯Êý¶¨ÒåµÄ²Ù×÷¡£
         </struct></value></fault>
     </methodResponse>
 
-ÕâÀïÓÐÒ»µãÒª×¢ÒâµÄÊÇ£¬RPCÍ¨³£ÊÇÔÚÏìÓ¦ÌåÀï°üº¬ËùÓÐ´íÎó±¨¸æ¡£HTTP×´Ì¬Âë²»»áÓÐËù²»Í¬£¬ÕâÒâÎ¶×ÅÄãÐèÒª¼ì²é·µ»ØÖµ£¬ÒÔÈ·¶¨ÊÇ·ñ·¢ÉúÁË´íÎó£¡
+è¿™é‡Œæœ‰ä¸€ç‚¹è¦æ³¨æ„çš„æ˜¯ï¼ŒRPCé€šå¸¸æ˜¯åœ¨å“åº”ä½“é‡ŒåŒ…å«æ‰€æœ‰é”™è¯¯æŠ¥å‘Šã€‚HTTPçŠ¶æ€ç ä¸ä¼šæœ‰æ‰€ä¸åŒï¼Œè¿™æ„å‘³ç€ä½ éœ€è¦æ£€æŸ¥è¿”å›žå€¼ï¼Œä»¥ç¡®å®šæ˜¯å¦å‘ç”Ÿäº†é”™è¯¯ï¼
 
-×îºó£¬ºÜ¶àRPCÊµÏÖ»¹Í¨¹ýÐ­Òé±¾ÉíÌá¹©ÎÄµµ¸øËûÃÇµÄ×îÖÕÓÃ»§¡£ÔÚSOAP£¬ÎÄµµÊÇ[WSDL](http://www.w3.org/TR/wsdl)¡£ÔÚXML-RPC£¬ÎÄµµÊÇÍ¨¹ý¸÷ÖÖ¡°[system.](http://tldp.org/HOWTO/XML-RPC-HOWTO/xmlrpc-howto-interfaces.html)¡±·½·¨¡£Õâ¸ö×ÔÎÒËµÃ÷¹¦ÄÜ£¨²¢²»×ÜÊÇ£©¿ÉÒÔÔÚÊµÏÖºóÌá¹©¸øÏû·ÑÕßÈçºÎÓë·þÎñ½»»¥µÄ±¦¹óÐÅÏ¢¡£
+æœ€åŽï¼Œå¾ˆå¤šRPCå®žçŽ°è¿˜é€šè¿‡åè®®æœ¬èº«æä¾›æ–‡æ¡£ç»™ä»–ä»¬çš„æœ€ç»ˆç”¨æˆ·ã€‚åœ¨SOAPï¼Œæ–‡æ¡£æ˜¯[WSDL](http://www.w3.org/TR/wsdl)ã€‚åœ¨XML-RPCï¼Œæ–‡æ¡£æ˜¯é€šè¿‡å„ç§â€œ[system.](http://tldp.org/HOWTO/XML-RPC-HOWTO/xmlrpc-howto-interfaces.html)â€æ–¹æ³•ã€‚è¿™ä¸ªè‡ªæˆ‘è¯´æ˜ŽåŠŸèƒ½ï¼ˆå¹¶ä¸æ€»æ˜¯ï¼‰å¯ä»¥åœ¨å®žçŽ°åŽæä¾›ç»™æ¶ˆè´¹è€…å¦‚ä½•ä¸ŽæœåŠ¡äº¤äº’çš„å®è´µä¿¡æ¯ã€‚
 
-Òª¼Ç×¡RPCµÄÒªµãÊÇ£º
+è¦è®°ä½RPCçš„è¦ç‚¹æ˜¯ï¼š
 
-* Ò»¸ö·þÎñ¶Ëµã£¬Ðí¶à²Ù×÷¡£
-* Ò»¸ö·þÎñ¶Ëµã£¬Ò»ÖÖHTTP·½·¨£¨Í¨³£ÊÇ`POST`£©¡£
-* ½á¹¹»¯µÄ£¬¿ÉÔ¤²âµÄÇëÇó¸ñÊ½¡£½á¹¹»¯µÄ£¬¿ÉÔ¤²âµÄÏìÓ¦¸ñÊ½¡£
-* ½á¹¹»¯µÄ£¬¿ÉÔ¤²âµÄ²Ù×÷±¨¸æ¸ñÊ½¡£
-* ¿ÉÓÃ²Ù×÷µÄ½á¹¹»¯ÎÄµµ¡£
+* ä¸€ä¸ªæœåŠ¡ç«¯ç‚¹ï¼Œè®¸å¤šæ“ä½œã€‚
+* ä¸€ä¸ªæœåŠ¡ç«¯ç‚¹ï¼Œä¸€ç§HTTPæ–¹æ³•ï¼ˆé€šå¸¸æ˜¯`POST`ï¼‰ã€‚
+* ç»“æž„åŒ–çš„ï¼Œå¯é¢„æµ‹çš„è¯·æ±‚æ ¼å¼ã€‚ç»“æž„åŒ–çš„ï¼Œå¯é¢„æµ‹çš„å“åº”æ ¼å¼ã€‚
+* ç»“æž„åŒ–çš„ï¼Œå¯é¢„æµ‹çš„æ“ä½œæŠ¥å‘Šæ ¼å¼ã€‚
+* å¯ç”¨æ“ä½œçš„ç»“æž„åŒ–æ–‡æ¡£ã€‚
 
-ÕâÒ»ÇÐËµÃ÷£¬RPCÍùÍùÊÇÒ»¸ö²»Ì«ÊÊºÏÓÚweb APIs£º
-* Äã²»ÄÜÈ·¶¨Í¨¹ýURIÓÐ¶àÉÙ×ÊÔ´ÊÇ¿ÉÓÃµÄ¡£
-* È±·¦HTTP»º´æ£¬ÎÞ·¨Ê¹ÓÃÔ­ÉúHTTP¶¯´ÊÓÚ³£ÓÃµÄ²Ù×÷£»È±·¦HTTPÏìÓ¦´úÂë´íÎó±¨¸æ£¬ÐèÒª¶Ô½á¹û·´Ë¼ÒÔÈ·¶¨ÊÇ·ñ·¢ÉúÁË´íÎó¡£
-* ¡°Ò»µ¶ÇÐ¡±µÄ¸ñÊ½¿ÉÒÔÏÞÖÆ£»¿Í»§Ïû·ÑÌæ´úÐòÁÐ»¯¸ñÊ½²»ÄÜ±»Ê¹ÓÃ£¬ºÍÏûÏ¢¸ñÊ½Í¨³£¶Ô¿ÉÒÔÌá½»»ò·µ»ØµÄÊý¾ÝÀàÐÍÇ¿¼Ó²»±ØÒªµÄÏÞÖÆ¡£
+è¿™ä¸€åˆ‡è¯´æ˜Žï¼ŒRPCå¾€å¾€æ˜¯ä¸€ä¸ªä¸å¤ªé€‚åˆäºŽweb APIsï¼š
+* ä½ ä¸èƒ½ç¡®å®šé€šè¿‡URIæœ‰å¤šå°‘èµ„æºæ˜¯å¯ç”¨çš„ã€‚
+* ç¼ºä¹HTTPç¼“å­˜ï¼Œæ— æ³•ä½¿ç”¨åŽŸç”ŸHTTPåŠ¨è¯äºŽå¸¸ç”¨çš„æ“ä½œï¼›ç¼ºä¹HTTPå“åº”ä»£ç é”™è¯¯æŠ¥å‘Šï¼Œéœ€è¦å¯¹ç»“æžœåæ€ä»¥ç¡®å®šæ˜¯å¦å‘ç”Ÿäº†é”™è¯¯ã€‚
+* â€œä¸€åˆ€åˆ‡â€çš„æ ¼å¼å¯ä»¥é™åˆ¶ï¼›å®¢æˆ·æ¶ˆè´¹æ›¿ä»£åºåˆ—åŒ–æ ¼å¼ä¸èƒ½è¢«ä½¿ç”¨ï¼Œå’Œæ¶ˆæ¯æ ¼å¼é€šå¸¸å¯¹å¯ä»¥æäº¤æˆ–è¿”å›žçš„æ•°æ®ç±»åž‹å¼ºåŠ ä¸å¿…è¦çš„é™åˆ¶ã€‚
 
-¸ÅÀ¨µÄËµ£¬´ó¶àÊýRPC±äÖÖÍ¨³£ÔÚÊ¹ÓÃweb APIs²»Ê¹ÓÃHTTP³ä·Ö·¢»ÓÆä¹¦ÄÜ¡£
+æ¦‚æ‹¬çš„è¯´ï¼Œå¤§å¤šæ•°RPCå˜ç§é€šå¸¸åœ¨ä½¿ç”¨web APIsä¸ä½¿ç”¨HTTPå……åˆ†å‘æŒ¥å…¶åŠŸèƒ½ã€‚
 
 
 REST
 ====
-º¬×´Ì¬´«Êä£¨Ó¢ÎÄ£ºRepresentational State Transfer£¬¼ò³ÆREST£©²»ÊÇÒ»¸ö¹æ·¶£¬¶øÊÇÎ§ÈÆHTTP¹æ·¶Éè¼ÆµÄ¼Ü¹¹¡£[Î¬»ù°Ù¿Æ](http://zh.wikipedia.org/wiki/REST)µÄÎÄÕÂÌá¹©ÁËÒ»¸öºÜºÃµÄRESTµÄ¸ÅÄîµÄ¸ÅÊö£¬ºÍ·á¸»µÄ×ÊÔ´¡£
+å«çŠ¶æ€ä¼ è¾“ï¼ˆè‹±æ–‡ï¼šRepresentational State Transferï¼Œç®€ç§°RESTï¼‰ä¸æ˜¯ä¸€ä¸ªè§„èŒƒï¼Œè€Œæ˜¯å›´ç»•HTTPè§„èŒƒè®¾è®¡çš„æž¶æž„ã€‚[ç»´åŸºç™¾ç§‘](http://zh.wikipedia.org/wiki/REST)çš„æ–‡ç« æä¾›äº†ä¸€ä¸ªå¾ˆå¥½çš„RESTçš„æ¦‚å¿µçš„æ¦‚è¿°ï¼Œå’Œä¸°å¯Œçš„èµ„æºã€‚
 
-RESTÀûÓÃHTTPµÄÓÅÊÆ£¬½¨Á¢ÔÚ£º
-* ¶Ô×ÊÔ´URI×÷ÎªÎ¨Ò»±êÊ¶·û¡£
-* ·á¸»µÄÉèÖÃHTTP¶¯´Ê¶Ô×ÊÔ´µÄ²Ù×÷¡£
-* Îª¿Í»§¶ËÖ¸¶¨±íÊ¾ËüÃÇ¿ÉÒÔ³ÊÏÖµÄ¸ñÊ½µÄÄÜÁ¦£¬²¢Îª·þÎñ¶ËÂÄÐÐÕâÐ©£¨»òÕßÈç¹ûËü²»ÄÜ½«±íÃ÷£©
-* ×ÊÔ´À´±íÊ¾¹ØÏµÖ®¼äµÄÁªÏµ¡££¨Èç£¬³¬Ã½ÌåÁ´½Ó¡£¾ÍÏñÔÚHTMLÎÄµµÄÇÑù£©
+RESTåˆ©ç”¨HTTPçš„ä¼˜åŠ¿ï¼Œå»ºç«‹åœ¨ï¼š
+* å¯¹èµ„æºURIä½œä¸ºå”¯ä¸€æ ‡è¯†ç¬¦ã€‚
+* ä¸°å¯Œçš„è®¾ç½®HTTPåŠ¨è¯å¯¹èµ„æºçš„æ“ä½œã€‚
+* ä¸ºå®¢æˆ·ç«¯æŒ‡å®šè¡¨ç¤ºå®ƒä»¬å¯ä»¥å‘ˆçŽ°çš„æ ¼å¼çš„èƒ½åŠ›ï¼Œå¹¶ä¸ºæœåŠ¡ç«¯å±¥è¡Œè¿™äº›ï¼ˆæˆ–è€…å¦‚æžœå®ƒä¸èƒ½å°†è¡¨æ˜Žï¼‰
+* èµ„æºæ¥è¡¨ç¤ºå…³ç³»ä¹‹é—´çš„è”ç³»ã€‚ï¼ˆå¦‚ï¼Œè¶…åª’ä½“é“¾æŽ¥ã€‚å°±åƒåœ¨HTMLæ–‡æ¡£é‚£æ ·ï¼‰
 
-µ±Ì¸ÂÛ¹ØÓÚREST£¬[Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html)¾­³£±»ÓÃÀ´ÊµÏÖÒ»¸öÉè¼ÆÁ¼ºÃµÄREST APIÊ±£¬ÃèÊö±ØÒªµÄ¹Ø×¢¡£Ëü°üÀ¨4¸ö²ã´Î£¬´Ó0¿ªÊ¼Ë÷Òý£º
+å½“è°ˆè®ºå…³äºŽRESTï¼Œ[Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html)ç»å¸¸è¢«ç”¨æ¥å®žçŽ°ä¸€ä¸ªè®¾è®¡è‰¯å¥½çš„REST APIæ—¶ï¼Œæè¿°å¿…è¦çš„å…³æ³¨ã€‚å®ƒåŒ…æ‹¬4ä¸ªå±‚æ¬¡ï¼Œä»Ž0å¼€å§‹ç´¢å¼•ï¼š
 
 * **Level 0**:
 * **Level 1**:
