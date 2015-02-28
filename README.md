@@ -18,7 +18,7 @@
 
 ### API PRIMER
 
-* [What is an API?](https://apigility.org/documentation/api-primer/what-is-an-api) [进行中]
+* [What is an API?](https://apigility.org/documentation/api-primer/what-is-an-api) [完成](https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/what-is-an-api.md)
 * [Representation Formats](https://apigility.org/documentation/api-primer/representation-formats)
 * [Hypermedia Application Layer](https://apigility.org/documentation/api-primer/halprimer) [进行中]
 * [Error Reporting](https://apigility.org/documentation/api-primer/error-reporting)
@@ -29,8 +29,8 @@
 
 ### AUTHENTICATION AND AUTHORIZATION
 
-* [Introduction](https://apigility.org/documentation/auth/intro)
-* [About Authentication](https://apigility.org/documentation/auth/authentication-about)
+* [Introduction](https://apigility.org/documentation/auth/intro) [完成](https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/intro.md)
+* [About Authentication](https://apigility.org/documentation/auth/authentication-about) [未完成](https://github.com/VergilLai/ApigilityDoc-zh_cn/blob/master/authentication-about.md)
 * [HTTP Basic Authentication](https://apigility.org/documentation/auth/authentication-http-basic)
 * [HTTP Digest Authentication](https://apigility.org/documentation/auth/authentication-http-digest)
 * [OAuth2 Authentication](https://apigility.org/documentation/auth/authentication-oauth2)
